@@ -1,19 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  background-color: gray;
-}
-a {
-  text-decoration-line: none;
+  background-color: rgb(54, 54, 54);
   color: white;
-  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-a:checked {
-  color: white;
-}
-.link {
-  margin: 10px;
+
+a,
+a:hover {
+  color: rgb(255, 230, 230);
+  text-decoration: none;
 }
