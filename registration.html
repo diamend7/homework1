@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="registration.css" />
   </head>
   <body>
-    <main class="mainre">
-      <h1>Регістрація</h1>
-      <form action=" https://fom.in.ua/echo" method="get">
+    <div class="img">
+      <form class="form" action="https://fom.in.ua/echo" method="get">
         <label for="mail">Email</label>
         <input
           type="email"
           id="mail"
           placeholder="Write here your email"
           class="stroke"
+          name="mail"
+          required
         />
 
         <label for="password">Password</label>
@@ -24,16 +25,22 @@
           type="password"
           id="password"
           placeholder="Write here your new password"
+          name="password"
+          required
         />
 
-        <label for="pagain">Confirmation</label>
+        <label for="pagain">Confirm</label>
         <input
           class="stroke"
           type="password"
           id="pagain"
           placeholder="Write your password again"
+          name="confirm"
+          required
         />
+        <button class="btn">Sign Up</button>
+        <p class="alr">Already registrated?| <a href="login.html">Log In</a></p>
       </form>
-    </main>
+    </div>
   </body>
 </html>
