@@ -3,130 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Car site</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <input id="forPrice" type="checkbox" class="pseudoelement-action" data-gtm-form-interact-field-id="1"> -->
+    <div class="nav">
+      <a href="login.html">логин</a>
+      <a href="registration.html">зареєструватися</a>
+    </div>
     <header>
-      <form action=" https://fom.in.ua/echo" method="post">
-        <select name="cartype" id="cartype11">
-          <option value="nomatter">Будь-яка</option>
-          <option value="cartype2">Мото</option>
-          <option value="cartype3">Вантажівки</option>
-          <option value="cartype4">Причепи</option>
-          <option value="cartype5">Автобуси</option>
-          <option value="cartype6">Танк</option>
-          <option value="cartype7">Бандеромобіль</option>
-        </select>
-        <select name="whoscar" id="whos">
-          <option value="nomatter">Будь-яка</option>
-          <option value="bmw">BMW</option>
-          <option value="md">Mercedes</option>
-          <option value="hd">Honda</option>
-          <option value="sr">Shevrolet</option>
-          <option value="fd">Ford</option>
-          <option value="ww">WOLKSWAGEN</option>
-          <option value="sm">Samsung</option>
-        </select>
-        <select name="country" id="country">
-          <option value="nomatter">Будь-яка</option>
-          <option value="usa">America</option>
-          <option value="fr">France</option>
-          <option value="gr">Germany</option>
-          <option value="pl">Poland</option>
-          <option value="ua">Ukraine</option>
-          <option value="ng">Nigeria</option>
-          <option value="ch">China</option>
-        </select>
-        <div class="dateCost">
-          <p>Ціна</p>
-          <label for="from">От:</label>
-          <input type="number" id="from" min="0" name="cost" />
-          <label for="to">До:</label>
-          <input type="number" id="to" name="cost2" />
-        </div>
-        <div class="dateShip">
-          <p>Рік випуску</p>
-          <label for="from2">От:</label>
-          <input
-            type="number"
-            id="from2"
-            min="1939"
-            max="2024"
-            value="1939"
-            name="age"
-          />
-          <label for="to2">До:</label>
-          <input
-            type="number"
-            id="to2"
-            min="1939"
-            max="2024"
-            value="2024"
-            name="age"
-          />
-        </div>
-        <div class="statediv">
-          <p>Стан</p>
-          <label for="everyone">Будь-яка</label>
-          <input type="checkbox" name="nomatterstate" id="everyone" />
-          <label for="state">Нова</label>
-          <input type="checkbox" name="state" id="state" />
-          <label for="state2">Бита</label>
-          <input type="checkbox" name="state2" id="state2" />
-          <label for="state3">У кредиті</label>
-          <input type="checkbox" name="state3" id="state3" />
-          <label for="state4">Нерозмитнена</label>
-          <input type="checkbox" name="state4" id="state4" />
-        </div>
-        <div class="gasdiv">
-          <p>Стан</p>
-          <label for="everyone2">Будь-яка</label>
-          <input type="checkbox" name="nommatergas" id="everyone2" />
-          <label for="gas">Газ</label>
-          <input type="checkbox" name="gas" id="gas" />
-          <label for="gas2">Бензин</label>
-          <input type="checkbox" name="gas2" id="gas2" />
-          <label for="gas3">Дизельне</label>
-          <input type="checkbox" name="gas3" id="gas3" />
-          <label for="gas4">Уран</label>
-          <input type="checkbox" name="gas4" id="gas4" />
-        </div>
-        <div class="mechanicdiv">
-          <p>Коробка передач</p>
-          <label for="everyone3">Будь-яка</label>
-          <input type="checkbox" name="nommatermech" id="everyone3" />
-          <label for="machanic2">Автомат</label>
-          <input type="checkbox" name="machanic2" id="machanic2" />
-          <label for="machanic3">Механіка</label>
-          <input type="checkbox" name="machanic3" id="machanic3" />
-        </div>
-        <div class="colordiv">
-          <!-- ...не я чет не хочу 255 цветов писать -->
-          <p>Колір</p>
-          <label for="everyone4">Будь-який</label>
-          <input type="checkbox" name="nomattercolor" id="everyone4" />
-          <label for="color">Чорний</label>
-          <input type="checkbox" name="color" id="color" />
-          <label for="color2">Біла</label>
-          <input type="checkbox" name="color2" id="color2" />
-          <label for="color3">Сіра</label>
-          <input type="checkbox" name="color3" id="color3" />
-          <label for="color4">Радужна</label>
-          <input type="checkbox" name="color4" id="color4" />
-        </div>
-        <div class="comfort">
-          <select name="comfort" id="comfort">
-            <option value="nomattercomf">Будь-яка</option>
-            <option value="vip">Люкс</option>
-            <option value="leather">Шкіра</option>
-            <option value="megavip">Слоновая кость</option>
-          </select>
-        </div>
+      <div class="allthing">
+        <form action=" https://fom.in.ua/echo" method="post">
+          <div class="selections displayflex margright">
+            <label for="cartype11">Тип машини</label>
+            <select name="cartype" id="cartype11">
+              <option value="nomatter">Будь-яка</option>
+              <option value="cartype2">Мото</option>
+              <option value="cartype3">Вантажівки</option>
+              <option value="cartype4">Причепи</option>
+              <option value="cartype5">Автобуси</option>
+              <option value="cartype6">Танк</option>
+              <option value="cartype7">Бандеромобіль</option></select
+            ><br />
+            <label for="whos">Марка</label>
+            <select name="whoscar" id="whos">
+              <option value="nomatter">Будь-яка</option>
+              <option value="bmw">BMW</option>
+              <option value="md">Mercedes</option>
+              <option value="hd">Honda</option>
+              <option value="sr">Shevrolet</option>
+              <option value="fd">Ford</option>
+              <option value="ww">WOLKSWAGEN</option>
+              <option value="sm">Samsung</option></select
+            ><br />
+            <label for="country">Країна</label>
+            <select name="country" id="country">
+              <option value="nomatter">Будь-яка</option>
+              <option value="usa">America</option>
+              <option value="fr">France</option>
+              <option value="gr">Germany</option>
+              <option value="pl">Poland</option>
+              <option value="ua">Ukraine</option>
+              <option value="ng">Nigeria</option>
+              <option value="ch">China</option>
+            </select>
+          </div>
+          <div class="costage">
+            <div class="dateCost displayflex margright">
+              <p class="ptext">Ціна</p>
+              <label for="from">От:</label>
+              <input type="number" id="from" min="0" name="cost" />
+              <label for="to">До:</label>
+              <input type="number" id="to" name="cost2" />
+            </div>
+            <div class="dateShip displayflex margright">
+              <p class="ptext">Рік випуску</p>
+              <!-- тут можна було використати date але так краще виглядає -->
+              <label for="from2">От:</label>
+              <input
+                type="number"
+                id="from2"
+                min="1939"
+                max="2024"
+                value="1939"
+                name="age"
+              />
+              <label for="to2">До:</label>
+              <input
+                type="number"
+                id="to2"
+                min="1939"
+                max="2024"
+                value="2024"
+                name="age2"
+              />
+            </div>
+          </div>
+          <div class="allstats">
+            <div class="statediv displayflex margright">
+              <p class="ptext">Стан</p>
+              <label for="everyone">Будь-яка</label>
+              <input type="checkbox" name="nomatterstate" id="everyone" /><br />
+              <label for="state">Нова</label>
+              <input type="checkbox" name="state" id="state" /><br />
+              <label for="state2">Бита</label>
+              <input type="checkbox" name="state2" id="state2" /><br />
+              <label for="state3">У кредиті</label>
+              <input type="checkbox" name="state3" id="state3" /><br />
+              <label for="state4">Нерозмитнена</label>
+              <input type="checkbox" name="state4" id="state4" /><br />
+            </div>
+            <div class="gasdiv displayflex margright">
+              <p class="ptext">Паливо</p>
+              <label for="everyone2">Будь-яка</label>
+              <input type="checkbox" name="nommatergas" id="everyone2" /><br />
+              <label for="gas">Газ</label>
+              <input type="checkbox" name="gas" id="gas" /><br />
+              <label for="gas2">Бензин</label>
+              <input type="checkbox" name="gas2" id="gas2" /><br />
+              <label for="gas3">Дизельне</label>
+              <input type="checkbox" name="gas3" id="gas3" /><br />
+              <label for="gas4">Уран</label>
+              <input type="checkbox" name="gas4" id="gas4" /><br />
+            </div>
+            <div class="mechanicdiv displayflex margright">
+              <p class="ptext">Коробка передач</p>
+              <label for="everyone3">Будь-яка</label>
+              <input type="checkbox" name="nommatermech" id="everyone3" /><br />
+              <label for="machanic2">Автомат</label>
+              <input type="checkbox" name="machanic2" id="machanic2" /><br />
+              <label for="machanic3">Механіка</label>
+              <input type="checkbox" name="machanic3" id="machanic3" /><br />
+            </div>
+            <div class="colordiv displayflex margright">
+              <!-- ...не я чет не хочу 255 цветов писать -->
+              <p class="ptext">Колір</p>
+              <label for="everyone4">Будь-який</label>
+              <input
+                type="checkbox"
+                name="nomattercolor"
+                id="everyone4"
+              /><br />
+              <label for="color">Чорний</label>
+              <input type="checkbox" name="color" id="color" /><br />
+              <label for="color2">Біла</label>
+              <input type="checkbox" name="color2" id="color2" /><br />
+              <label for="color3">Сіра</label>
+              <input type="checkbox" name="color3" id="color3" /><br />
+              <label for="color4">Радужна</label>
+              <input type="checkbox" name="color4" id="color4" /><br />
+            </div>
+            <div class="comfort displayflex margright">
+              <p class="ptext">Салон</p>
+              <select name="comfort" id="comfort">
+                <option value="nomattercomf">Будь-яка</option>
+                <option value="vip">Люкс</option>
+                <option value="leather">Шкіра</option>
+                <option value="megavip">Слоновая кость</option>
+              </select>
+            </div>
+          </div>
 
-        <button class="btn">click</button>
-      </form>
+          <button class="btn">Пошук</button>
+        </form>
+        <div class="img">
+          <img src="img/Evo.jpg" alt="car" />
+          <img src="img/unnamed.jpg" alt="car" />
+          <img
+            src="img/291671922_5565233643511161_6069339408379623114_n.jpg"
+            alt="car"
+          />
+          <img
+            src="img/9cef02fc84b44b545de632dda897d7d4-flying-car-weird-cars.jpg"
+            alt="car"
+          />
+        </div>
+      </div>
     </header>
   </body>
 </html>

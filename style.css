@@ -3,9 +3,119 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  background-color: aqua;
-  text-align: center;
-  margin-top: 50px;
-  padding: 15px;
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
 }
+.nav {
+  position: fixed;
+  right: 5px;
+  padding: 5px;
+  background-color: #eee;
+  opacity: 70%;
+  border-radius: 20px;
+  margin-top: -5px;
+}
+.nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+.allthing {
+  position: relative;
+}
+.img {
+  position: absolute;
+  left: 400px;
+  margin-top: -800px;
+  width: 1000px;
+
+  columns: 2;
+}
+img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  width: 500px;
+}
+header {
+  background-image: url(img/pexels-pixabay-210182.jpg);
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+}
+form {
+  font-size: 18px;
+  background-color: #eee;
+  width: 250px;
+  opacity: 80%;
+  border-radius: 20px;
+}
+
+.selections {
+  width: 250px;
+  padding: 15px;
+
+  position: relative;
+}
+.selections select {
+  position: absolute;
+  right: 40px;
+  width: 100px;
+}
+.costage {
+  width: 250px;
+  padding: 15px;
+
+  position: relative;
+}
+
+.dateCost input {
+  width: 70px;
+}
+
+.dateShip input {
+  width: 70px;
+}
+.allstats {
+  width: 250px;
+  padding: 15px;
+  position: relative;
+}
+.statediv,
+.gasdiv,
+.mechanicdiv,
+.colordiv {
+  margin-bottom: 10px;
+}
+.statediv,
+.gasdiv,
+.mechanicdiv,
+.colordiv p {
+  margin-bottom: 5px;
+}
+.ptext {
+  color: rgb(68, 68, 68);
+  font-weight: 800;
+}
+.btn {
+  margin-left: 60px;
+  width: 125px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  color: #eee;
+  cursor: pointer;
+}
+/* .statediv {
+  flex-direction: column;
+}
+.displayflex {
+  display: flex;
+}
+.margright {
+  margin-right: 5px;
+} */
