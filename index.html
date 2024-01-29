@@ -11,9 +11,9 @@
     <header>
       <div class="container">
         <h2><span>Wisdom</span>Page</h2>
-        <p class="firstp">Home</p>
-        <p>About</p>
-        <p>Features</p>
+        <a href="#Home" class="firstp">Home</a>
+        <a href="#About">About</a>
+        <a href="#Features">Features</a>
       </div>
     </header>
     <div class="sectionred">
@@ -25,7 +25,7 @@
       <section>
         <div class="backgraywhite">
           <div class="fircont container">
-            <h1 class="red1">About</h1>
+            <h1 class="red1" id="About">About</h1>
             <div class="insidecon">
               <div class="textinside">
                 <h2 class="label"><b>Content subtitle</b></h2>
@@ -46,7 +46,8 @@
       <section>
         <div class="backwhite">
           <div class="secont container">
-            <h1 class="red2">Features</h1>
+            <h1 class="red2" id="Features">Features</h1>
+            <!-- вибачте але 2 h1 було необхідно тому що розміри цих двох однакові -->
             <div class="cardtitle">
               <div class="card1">
                 <img src="img/card-image.jpg" alt="castle" class="castleimg" />
@@ -61,7 +62,7 @@
               <div class="card1">
                 <img
                   src="img/card-image (1).jpg"
-                  alt="castle"
+                  alt="mountian"
                   class="castleimg"
                 />
                 <h2 class="paddingbottom">Card title</h2>
@@ -75,7 +76,7 @@
               <div class="card1">
                 <img
                   src="img/card-image (2).jpg"
-                  alt="castle"
+                  alt="house"
                   class="castleimg"
                 />
                 <h2 class="paddingbottom">Card title</h2>
@@ -91,5 +92,16 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="ending">
+        <p>© 2021 <span class="endtext">Wisdom page</span></p>
+      </div>
+      <div class="endimages container">
+        <img src="img/twitter.png" alt="twitter" class="twitter endim" />
+        <img src="img/hover-effect.png" alt="click" class="hovereff" />
+        <img src="img/linked-in.jpg" alt="li" class="endim twitter" />
+        <img src="img/instagram.png" alt="instagram" class="endim" />
+      </div>
+    </footer>
   </body>
 </html>

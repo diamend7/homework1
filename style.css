@@ -31,11 +31,13 @@ header {
 header div {
   display: flex;
 }
-header p {
+header a {
   margin-left: 20px;
   align-content: center;
   display: flex;
   flex-wrap: wrap;
+  text-decoration: none;
+  color: #000000;
 }
 header span {
   color: #62bfad;
@@ -118,9 +120,38 @@ header h2 {
 }
 main a {
   color: #d52047;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px #d52047 solid;
 }
 .backwhite {
   background-color: #ffffff;
   padding-bottom: 80px;
+}
+footer {
+  background-color: #f9f7e8;
+  text-align: center;
+  padding-top: 32px;
+}
+.endtext {
+  border-bottom: 1px #000000 solid;
+}
+.ending {
+  padding-bottom: 24px;
+}
+.endimages {
+  width: 175px;
+  columns: 3;
+  text-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 32px;
+  position: relative;
+}
+.twitter {
+  padding-right: 16px;
+}
+
+.hovereff {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
 }
