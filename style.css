@@ -3,3 +3,124 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+.marginauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+  padding-left: 15px;
+}
+header {
+  background-color: #f9f7e8;
+  width: 100%;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+header div {
+  display: flex;
+}
+header p {
+  margin-left: 20px;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+header span {
+  color: #62bfad;
+}
+header h2 {
+  font-family: Courgette, cursive;
+}
+.firstp {
+  margin-left: 80px;
+}
+.flexdis {
+  display: flex;
+  flex-direction: row;
+}
+.section1 {
+  font-family: "Limelight", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.sectionred {
+  background-color: #d52047;
+  text-align: center;
+  padding-top: 185px;
+  padding-bottom: 185px;
+}
+.red1 {
+  color: #d52047;
+  padding-top: 95px;
+  padding-bottom: 40px;
+  font-size: 48px;
+}
+.backgraywhite {
+  background-color: #eff8f6;
+  padding-bottom: 80px;
+}
+.insidecon {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #e5e5e5;
+  border-radius: 5px;
+}
+.firimg {
+  max-width: 555px;
+  aspect-ratio: 16/9;
+}
+.textinside {
+  padding: 24px;
+  font-size: 24px;
+}
+.label {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+.red2 {
+  color: #d52047;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 48px;
+}
+.cardtitle {
+  columns: 3;
+}
+.castleimg {
+  max-width: 275px;
+  aspect-ratio: 16/11;
+
+  padding-bottom: 24px;
+}
+.card1 {
+  padding: 24px;
+  border: solid 2px #e5e5e5;
+  max-width: 325px;
+  border-radius: 5px;
+}
+.paddingbottom {
+  padding-bottom: 24px;
+}
+main a {
+  color: #d52047;
+  text-decoration: underline;
+}
+.backwhite {
+  background-color: #ffffff;
+  padding-bottom: 80px;
+}
