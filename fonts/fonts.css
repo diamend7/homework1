@@ -13,3 +13,8 @@
   src: url("./Courgette-Regular.woff") format("woff");
   font-weight: 400;
 }
+@font-face {
+  font-family: "LatoBold";
+  src: url("./Lato-Bold.woff") format("woff");
+  font-weight: 700;
+}
