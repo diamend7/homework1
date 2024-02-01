@@ -34,10 +34,14 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-header div {
+.headerclass {
   display: flex;
 }
-header a {
+
+.headerclass .firstp {
+  margin-left: 80px;
+}
+.headerclass a {
   margin-left: 20px;
   align-content: center;
   display: flex;
@@ -45,16 +49,14 @@ header a {
   text-decoration: none;
   color: #000000;
 }
-header span {
+.headerclass span {
   color: #62bfad;
 }
-header h1 {
+.headerclass h2 {
   font-family: Courgette, cursive;
   font-size: 32px;
 }
-.firstp {
-  margin-left: 80px;
-}
+
 .flexdis {
   display: flex;
   flex-direction: row;
@@ -66,22 +68,26 @@ header h1 {
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sectionred {
   background-color: #d52047;
-  text-align: center;
+
   padding-top: 185px;
   padding-bottom: 185px;
 }
 .red1 {
   color: #d52047;
-  padding-top: 95px;
-  padding-bottom: 40px;
+
+  margin-bottom: 40px;
   font-size: 48px;
 }
 .backgraywhite {
   background-color: #eff8f6;
   padding-bottom: 80px;
+  padding-top: 95px;
 }
 .insidecon {
   display: flex;
@@ -101,30 +107,36 @@ header h1 {
 .label {
   margin-bottom: 24px;
   font-size: 32px;
+  font-family: "LatoBold", sans-serif;
 }
 .red2 {
   color: #d52047;
-  padding-top: 80px;
-  padding-bottom: 40px;
+
+  margin-bottom: 40px;
   font-size: 48px;
 }
 .labelcardtitle {
   font-size: 32px;
+  font-family: "LatoBold", sans-serif;
 }
 .cardtitle {
   columns: 3;
 }
+
 .castleimg {
   max-width: 275px;
   aspect-ratio: 16/11;
 
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .card1 {
   padding: 24px;
   border: solid 2px #e5e5e5;
   max-width: 325px;
   border-radius: 5px;
+}
+.marginbottom {
+  margin-bottom: 24px;
 }
 .paddingbottom {
   padding-bottom: 24px;
@@ -137,30 +149,36 @@ main a {
 .backwhite {
   background-color: #ffffff;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 footer {
   background-color: #f9f7e8;
   text-align: center;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 .endtext {
   border-bottom: 1px #000000 solid;
 }
-.ending {
-  padding-bottom: 24px;
-}
+
 .endimages {
-  text-wrap: nowrap;
   text-align: center;
-  padding-bottom: 32px;
+
   position: relative;
 }
-.twitter {
-  padding-right: 16px;
+.endimages img {
+  width: 24px;
+  height: 24px;
 }
-
+.twitter {
+  margin-right: 16px;
+}
+.endim {
+  position: relative;
+}
 .hovereff {
   position: absolute;
-  bottom: 20px;
-  left: 35px;
+  bottom: -12px;
+
+  left: 525px;
 }
