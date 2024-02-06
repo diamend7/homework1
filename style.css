@@ -1,5 +1,10 @@
 @import url(fonts/fonts.css);
 
+:root {
+  --width-first-img: 372px;
+  --height-first-img: 465px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +16,6 @@ html {
 }
 
 main {
-  padding-left: calc(130px - 70px);
   padding-top: 64px;
   padding-bottom: 64px;
   max-width: 1440px;
@@ -21,6 +25,7 @@ main {
 .positionrel {
   position: relative;
   max-width: 380px;
+  /* не 390 бо треба ставити br тоді */
   left: 70px;
   z-index: 3;
 }
@@ -29,26 +34,29 @@ main {
   font-family: "Inter", sans-serif;
   font-weight: 700;
 
-  line-height: 1.25;
+  line-height: 1.2;
+  margin-top: 60px;
   margin-bottom: 32px;
 }
 .textname {
   font-size: 20px;
   margin-bottom: 8px;
+  line-height: 1.4;
 }
 .proffesion {
   font-size: 14px;
+  line-height: 1.2;
 }
 .btn-firstimg {
   position: relative;
-  max-width: 372px;
-  max-height: 465px;
+  max-width: var(--width-first-img);
+  max-height: var(--height-first-img);
   width: calc(100% + 60px);
   height: calc(100% + 60px);
 }
 #headimage {
-  max-width: 372px;
-  max-height: 465px;
+  max-width: var(--width-first-img);
+  max-height: var(--height-first-img);
   width: calc(100% + 60px);
   height: calc(100% + 60px);
   object-fit: cover;
@@ -65,16 +73,16 @@ main {
 }
 .section1 {
   max-width: 602px;
+  max-height: 358px;
   width: 100%;
   margin-left: 30px;
 }
-.forsecimgs {
+.forsecimgs1,
+.forsecimgs2 {
   max-width: 286px;
   max-height: 358px;
   width: 100%;
   height: 100%;
-  margin-left: 30px;
-
   position: relative;
 }
 #secondmanimg {
@@ -90,6 +98,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-left: 30px;
 }
 .backarrow1 {
   max-width: 112px;
@@ -116,6 +125,81 @@ main {
   left: 0;
   background-color: white;
   cursor: pointer;
+  margin-left: 30px;
 }
-@media (max-width: 1440px) and (min-width: 768px) {
+.backarrow3 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+
+  background-color: white;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  .positionrel {
+    max-width: 280px;
+    left: 60px;
+  }
+  .headtext {
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+  }
+  .textname {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .proffesion {
+    font-size: 12px;
+  }
+  .btn-firstimg {
+    max-width: calc(var(--width-first-img) - 99px);
+    max-height: calc(var(--height-first-img) - 99px);
+  }
+  #headimage {
+    max-width: calc(var(--width-first-img) - 99px);
+    max-height: calc(var(--height-first-img) - 99px);
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+  }
+  .forsecimgs2 {
+    display: none;
+  }
+  .backarrow1 {
+    left: 16px;
+  }
+  .backarrow3 {
+    display: flex;
+    right: 16px;
+  }
+  .section1 {
+    max-width: 208px;
+    max-height: 260px;
+    margin-left: 20px;
+  }
+  .forsecimgs1 {
+    max-width: 208px;
+    max-height: 260px;
+  }
+  #secondmanimg {
+    max-width: 208px;
+    max-height: 260px;
+  }
+  .backarrow1,
+  .backarrow3 {
+    bottom: -40px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
 }
