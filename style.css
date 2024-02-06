@@ -1,5 +1,121 @@
+@import url(fonts/fonts.css);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  padding-left: calc(130px - 70px);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.positionrel {
+  position: relative;
+  max-width: 380px;
+  left: 70px;
+  z-index: 3;
+}
+.headtext {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+.textname {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.proffesion {
+  font-size: 14px;
+}
+.btn-firstimg {
+  position: relative;
+  max-width: 372px;
+  max-height: 465px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+}
+#headimage {
+  max-width: 372px;
+  max-height: 465px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  object-fit: cover;
+}
+#playbtn {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 5;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.section1 {
+  max-width: 602px;
+  width: 100%;
+  margin-left: 30px;
+}
+.forsecimgs {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+
+  position: relative;
+}
+#secondmanimg {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#thirdmanimg {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.backarrow1 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+  right: 0;
+  background-color: white;
+  cursor: pointer;
+}
+.backarrow2 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+  left: 0;
+  background-color: white;
+  cursor: pointer;
+}
+@media (max-width: 1440px) and (min-width: 768px) {
 }
