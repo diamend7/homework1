@@ -146,6 +146,12 @@ main {
   cursor: pointer;
   display: none;
 }
+
+#arrow1,
+#arrow2 {
+  max-width: 32px;
+  max-height: 20px;
+}
 @media (max-width: 1440px) and (min-width: 769px) {
   .positionrel {
     max-width: 280px;
@@ -203,6 +209,12 @@ main {
     max-width: 80px;
     max-height: 80px;
   }
+  #arrow1,
+  #arrow2 {
+    max-width: 28px;
+    max-height: 18px;
+  }
+
   main {
     margin-left: auto;
     margin-right: auto;
