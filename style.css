@@ -149,8 +149,8 @@ main {
 
 #arrow1,
 #arrow2 {
-  max-width: 32px;
-  max-height: 20px;
+  width: 32px;
+  height: 20px;
 }
 @media (max-width: 1440px) and (min-width: 769px) {
   .positionrel {
@@ -211,8 +211,8 @@ main {
   }
   #arrow1,
   #arrow2 {
-    max-width: 28px;
-    max-height: 18px;
+    width: 28px;
+    height: 18px;
   }
 
   main {
@@ -280,8 +280,8 @@ main {
   }
   #arrow1,
   #arrow2 {
-    max-width: 24px;
-    max-height: 24px;
+    width: 24px;
+    height: 24px;
   }
   .section1 {
     margin-left: 0;
