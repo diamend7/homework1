@@ -148,7 +148,8 @@ main {
 }
 
 #arrow1,
-#arrow2 {
+#arrow2,
+#arrow3 {
   width: 32px;
   height: 20px;
 }
@@ -210,7 +211,8 @@ main {
     max-height: 80px;
   }
   #arrow1,
-  #arrow2 {
+  #arrow2,
+  #arrow3 {
     width: 28px;
     height: 18px;
   }
@@ -279,7 +281,8 @@ main {
     bottom: -24px;
   }
   #arrow1,
-  #arrow2 {
+  #arrow2,
+  #arrow3 {
     width: 24px;
     height: 24px;
   }
