@@ -3,6 +3,7 @@
 :root {
   --width-first-img: 372px;
   --height-first-img: 465px;
+  /* незнаю навіщо вони мені тут алехай вже буде */
 }
 
 * {
@@ -14,7 +15,12 @@ html {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-
+.allhead {
+  max-width: 752px;
+  width: 100%;
+  max-height: 465px;
+  height: 100%;
+}
 main {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -75,6 +81,7 @@ main {
   max-width: 602px;
   max-height: 358px;
   width: 100%;
+  gap: 30px;
   margin-left: 30px;
 }
 .forsecimgs1,
@@ -98,7 +105,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-left: 30px;
 }
 .backarrow1 {
   max-width: 112px;
@@ -125,7 +131,6 @@ main {
   left: 0;
   background-color: white;
   cursor: pointer;
-  margin-left: 30px;
 }
 .backarrow3 {
   max-width: 112px;
@@ -182,6 +187,7 @@ main {
     max-width: 208px;
     max-height: 260px;
     margin-left: 20px;
+    margin-right: 20px;
   }
   .forsecimgs1 {
     max-width: 208px;
@@ -201,5 +207,74 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
+  }
+}
+@media (max-width: 769px) and (min-width: 0px) {
+  .allhead {
+    position: relative;
+    max-width: 343px;
+    max-height: 428px;
+    width: 100%;
+    height: 100%;
+    margin: 32px 16px 10px 16px;
+  }
+  .headtext {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .textname {
+    font-size: 14px;
+  }
+  .proffesion {
+    font-size: 12px;
+  }
+  .positionrel {
+    position: absolute;
+    max-width: 190px;
+    left: 23px;
+    top: 24px;
+    color: white;
+  }
+  .btn-firstimg {
+    max-width: 343px;
+    max-height: 428px;
+  }
+  #headimage {
+    max-width: 343px;
+    max-height: 428px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    max-width: 800px;
+  }
+  .section1 {
+    flex-direction: row;
+  }
+  .backarrow1 {
+    right: 0;
+    max-width: 48px;
+    max-height: 48px;
+    bottom: -24px;
+  }
+  .backarrow2 {
+    left: 0;
+    max-width: 48px;
+    max-height: 48px;
+    bottom: -24px;
+  }
+  #arrow1,
+  #arrow2 {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  .section1 {
+    margin-left: 0;
+    width: 343px;
+    height: 208px;
+    gap: 10px;
   }
 }
