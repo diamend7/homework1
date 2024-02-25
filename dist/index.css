@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  background-color: #eeeff1;
+  padding-top: 80px;
+  padding-bottom: 140px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.header .first-screen_text {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+}
+.header .first-screen_text .first-screen_button {
+  text-align: center;
+  margin-top: 65px;
+  max-width: 225px;
+}
+.header .first-screen_text .button {
+  display: block;
+  text-wrap: nowrap;
+  max-width: 255px;
+  max-height: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #34547a;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.header .first-screen_text .first-screen_title {
+  font-size: 48px;
+  line-height: 68.75px;
+}
+.header .first-screen_text .first-screen_par {
+  line-height: 26.25px;
+  max-height: 67px;
+  height: 100%;
+}
+.header .first-screen_text p {
+  color: #727272;
+  font-weight: 400;
+  margin-top: 60px;
+  max-width: 540px;
+}
+.header .container-s {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+  max-height: 700px;
+}
+.header .container-s .container-s li,
+.header .container-s a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.header .container-s .container-s li:hover,
+.header .container-s a:hover {
+  color: #34547a;
+}
+.header .container-s .navbar-links {
+  display: flex;
+  list-style: none;
+}
+.header .container-s .navbar-links .navbar-links_first {
+  font-size: 16px;
+  margin-left: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header .container-s .navbar-links .navbar-links_null {
+  letter-spacing: 2px;
+}
+
+.main .third-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main .third-section .about-author__second {
+  padding-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+}
+.main .third-section .video-menu {
+  max-height: 600px;
+  max-width: 1110px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .third-section .video-menu .video {
+  max-width: 1110px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 600px;
+}
+.main .about-author {
+  padding-top: 110px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+}
+.main .about-author_container {
+  max-height: 145px;
+  text-align: center;
+}
+.main .about-author_h2 {
+  font-size: 32px;
+}
+.main .about-author_p {
+  max-width: 535px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 50px;
+  line-height: 26.25px;
+  font-size: 16px;
+}
+.main .about-works {
+  background-color: #34547a;
+  padding: 100px 0 100px 0;
+}
+.main .about-works .about-works_container {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.main .about-works .about-works_projects {
+  display: flex;
+  max-width: 140px;
+  width: 100%;
+  max-height: 50px;
+}
+.main .about-works .page {
+  max-width: 50px;
+  max-height: 50px;
+}
+.main .about-works .page-div {
+  margin-left: 20px;
+  color: white;
+  line-height: 24.7px;
+}
+.main .about-works .page_text__first {
+  font-size: 21px;
+}
+.main .about-works .page_text__second {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media (max-width: 1050px) {
+  .main .about-works .six {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .main .about-works .five {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .main .about-works .four {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .main .about-works .three {
+    display: none;
+  }
+}
+.main .about-works .about-author_container {
+  margin-bottom: 55px;
+}
+
+.footer {
+  background-color: #34547a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer .footer_container {
+  color: white;
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer .footer_container .name {
+  max-width: 195px;
+  max-height: 19px;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.footer .footer_container .footer_rights {
+  max-height: 12px;
+  max-width: 195px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21.3px;
+}/*# sourceMappingURL=index.css.map */

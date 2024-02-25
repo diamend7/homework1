@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+.header {
+  background-color: #eeeff1;
+  padding-top: 80px;
+  padding-bottom: 140px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  .first-screen_text {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+    .first-screen_button {
+      text-align: center;
+      margin-top: 65px;
+      max-width: 225px;
+    }
+    .first-screen_button__tab {
+    }
+    .button {
+      display: block;
+      text-wrap: nowrap;
+      max-width: 255px;
+      max-height: 65px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      background-color: #34547a;
+      text-decoration: none;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+    .first-screen_title {
+      font-size: 48px;
+      line-height: 68.75px;
+    }
+    .first-screen_par {
+      line-height: 26.25px;
+      max-height: 67px;
+      height: 100%;
+    }
+
+    p {
+      color: #727272;
+      font-weight: 400;
+      margin-top: 60px;
+
+      max-width: 540px;
+    }
+  }
+
+  .container-s {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+
+    max-height: 700px;
+    .container-s li,
+    a {
+      text-transform: uppercase;
+
+      text-decoration: none;
+
+      color: #000000;
+      &:hover {
+        color: #34547a;
+      }
+    }
+
+    .navbar-links {
+      display: flex;
+      list-style: none;
+      .navbar-links_first {
+        font-size: 16px;
+        margin-left: 42px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .navbar-links_null {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+.main {
+  .third-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .about-author__second {
+      padding-bottom: 55px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 540px;
+    }
+    .video-menu {
+      max-height: 600px;
+      max-width: 1110px;
+
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      .video {
+        max-width: 1110px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        max-height: 600px;
+      }
+    }
+  }
+
+  .about-author {
+    padding-top: 110px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px;
+  }
+  .about-author_container {
+    max-height: 145px;
+    text-align: center;
+  }
+  .about-author_h2 {
+    font-size: 32px;
+  }
+  .about-author_p {
+    max-width: 535px;
+
+    font-weight: 400;
+    color: #727272;
+    margin-top: 50px;
+    line-height: 26.25px;
+    font-size: 16px;
+  }
+
+  .about-works {
+    background-color: #34547a;
+    padding: 100px 0 100px 0;
+    .about-works_container {
+      display: flex;
+      gap: 45px;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .about-works_projects {
+      display: flex;
+      max-width: 140px;
+      width: 100%;
+      max-height: 50px;
+    }
+    .page {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .page-div {
+      margin-left: 20px;
+      color: white;
+      line-height: 24.7px;
+    }
+    .page_text__first {
+      font-size: 21px;
+    }
+    .page_text__second {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .six {
+      @media (max-width: 1050px) {
+        display: none;
+      }
+    }
+    .five {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    .four {
+      @media (max-width: 720px) {
+        display: none;
+      }
+    }
+    .three {
+      @media (max-width: 520px) {
+        display: none;
+      }
+    }
+
+    .about-author_container {
+      margin-bottom: 55px;
+    }
+  }
+}
+.footer {
+  background-color: #34547a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .footer_container {
+    color: white;
+    max-width: 1110px;
+
+    margin-right: auto;
+    margin-left: auto;
+    .name {
+      max-width: 195px;
+      max-height: 19px;
+
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    .footer_rights {
+      max-height: 12px;
+      max-width: 195px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21.3px;
+    }
+  }
+}
