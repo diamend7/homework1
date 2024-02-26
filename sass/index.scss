@@ -13,19 +13,64 @@ html {
   padding-bottom: 140px;
   padding-left: 5px;
   padding-right: 5px;
+  @media (max-width: 700px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .first-screen_text {
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1110px;
+
+    @media (max-width: 700px) {
+      text-align: center;
+      margin-top: 50px;
+    }
     .first-screen_button {
       text-align: center;
       margin-top: 65px;
       max-width: 225px;
+      @media (max-width: 700px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 150px;
+        margin-top: 5px;
+      }
     }
-    .first-screen_button__tab {
+    .first-screen_title {
+      font-size: 48px;
+      line-height: 68.75px;
+      @media (max-width: 700px) {
+        font-size: 32px;
+        line-height: 32.75px;
+      }
     }
+    .first-screen_par {
+      line-height: 26.25px;
+      max-height: 67px;
+      height: 100%;
+      @media (max-width: 700px) {
+        max-height: 80px;
+        line-height: 20.25px;
+      }
+    }
+    p {
+      color: #727272;
+      font-weight: 400;
+      margin-top: 60px;
+      max-width: 540px;
+      @media (max-width: 700px) {
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 20.25px;
+      }
+    }
+
     .button {
       display: block;
       text-wrap: nowrap;
@@ -40,23 +85,12 @@ html {
       letter-spacing: 2px;
       font-weight: 400;
       line-height: 25px;
-    }
-    .first-screen_title {
-      font-size: 48px;
-      line-height: 68.75px;
-    }
-    .first-screen_par {
-      line-height: 26.25px;
-      max-height: 67px;
-      height: 100%;
-    }
-
-    p {
-      color: #727272;
-      font-weight: 400;
-      margin-top: 60px;
-
-      max-width: 540px;
+      @media (max-width: 700px) {
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 150px;
+      }
     }
   }
 
@@ -81,14 +115,36 @@ html {
     .navbar-links {
       display: flex;
       list-style: none;
+      @media (max-width: 700px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .media2 {
+        @media (max-width: 498px) {
+          margin-top: 10px;
+        }
+      }
+      .media {
+        @media (max-width: 385px) {
+          margin-top: 10px;
+        }
+      }
+
       .navbar-links_first {
         font-size: 16px;
         margin-left: 42px;
         text-transform: uppercase;
         letter-spacing: 2px;
+        @media (max-width: 700px) {
+          font-size: 12px;
+          margin-left: 20px;
+        }
       }
       .navbar-links_null {
         letter-spacing: 2px;
+        @media (max-width: 700px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -97,16 +153,27 @@ html {
   .third-section {
     padding-top: 100px;
     padding-bottom: 100px;
+    @media (max-width: 700px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     .about-author__second {
+      padding-left: 5px;
+      padding-right: 5px;
       padding-bottom: 55px;
       margin-left: auto;
       margin-right: auto;
       max-width: 540px;
+      @media (max-width: 700px) {
+        padding-bottom: 20px;
+      }
     }
     .video-menu {
       max-height: 600px;
       max-width: 1110px;
+      padding-left: 5px;
+      padding-right: 5px;
 
       height: 100%;
       margin-left: auto;
@@ -121,11 +188,17 @@ html {
   }
 
   .about-author {
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 110px;
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     max-width: 540px;
+    @media (max-width: 700px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
   .about-author_container {
     max-height: 145px;
@@ -133,6 +206,9 @@ html {
   }
   .about-author_h2 {
     font-size: 32px;
+    @media (max-width: 700px) {
+      font-size: 24px;
+    }
   }
   .about-author_p {
     max-width: 535px;
@@ -142,11 +218,19 @@ html {
     margin-top: 50px;
     line-height: 26.25px;
     font-size: 16px;
+    @media (max-width: 700px) {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 20.25px;
+    }
   }
 
   .about-works {
     background-color: #34547a;
     padding: 100px 0 100px 0;
+    @media (max-width: 700px) {
+      padding: 20px 0 20px 0;
+    }
     .about-works_container {
       display: flex;
       gap: 45px;
@@ -159,22 +243,39 @@ html {
       max-width: 140px;
       width: 100%;
       max-height: 50px;
+      @media (max-width: 700px) {
+        max-width: 70px;
+      }
     }
     .page {
       max-width: 50px;
       max-height: 50px;
+      @media (max-width: 700px) {
+        max-width: 30px;
+        max-height: 30px;
+      }
     }
     .page-div {
       margin-left: 20px;
       color: white;
       line-height: 24.7px;
+      @media (max-width: 700px) {
+        line-height: 15.7px;
+        margin-left: 10px;
+      }
     }
     .page_text__first {
       font-size: 21px;
+      @media (max-width: 700px) {
+        font-size: 16px;
+      }
     }
     .page_text__second {
       font-weight: 400;
       font-size: 16px;
+      @media (max-width: 700px) {
+        font-size: 12px;
+      }
     }
     .six {
       @media (max-width: 1050px) {
@@ -187,12 +288,12 @@ html {
       }
     }
     .four {
-      @media (max-width: 720px) {
+      @media (max-width: 500px) {
         display: none;
       }
     }
     .three {
-      @media (max-width: 520px) {
+      @media (max-width: 400px) {
         display: none;
       }
     }
@@ -206,8 +307,14 @@ html {
   background-color: #34547a;
   padding-top: 50px;
   padding-bottom: 50px;
+  @media (max-width: 700px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   .footer_container {
+    padding-left: 5px;
+    padding-right: 5px;
     color: white;
     max-width: 1110px;
 
@@ -220,13 +327,24 @@ html {
       font-size: 21px;
       line-height: 25px;
       margin-bottom: 20px;
+      @media (max-width: 700px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
     }
+
     .footer_rights {
       max-height: 12px;
       max-width: 195px;
       font-weight: 400;
       font-size: 13px;
       line-height: 21.3px;
+      @media (max-width: 700px) {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
