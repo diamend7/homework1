@@ -9,12 +9,17 @@ html {
   font-weight: 500;
 }
 
+.container {
+  max-width: 1100px;
+}
+
 .header {
   background-color: #eeeff1;
   padding-top: 80px;
   padding-bottom: 140px;
   padding-left: 5px;
   padding-right: 5px;
+  align-content: start;
 }
 @media (max-width: 700px) {
   .header {
@@ -26,7 +31,6 @@ html {
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1110px;
 }
 @media (max-width: 700px) {
   .header .first-screen_text {
@@ -59,12 +63,10 @@ html {
 }
 .header .first-screen_text .first-screen_par {
   line-height: 26.25px;
-  max-height: 67px;
   height: 100%;
 }
 @media (max-width: 700px) {
   .header .first-screen_text .first-screen_par {
-    max-height: 80px;
     line-height: 20.25px;
   }
 }
@@ -87,7 +89,6 @@ html {
 .header .first-screen_text .button {
   display: block;
   max-width: 255px;
-  max-height: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #34547a;
@@ -108,7 +109,6 @@ html {
 .header .container-s {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1110px;
   max-height: 700px;
 }
 .header .container-s .container-s li,
@@ -188,7 +188,6 @@ html {
 }
 .main .third-section .video-menu {
   max-height: 600px;
-  max-width: 1110px;
   padding-left: 5px;
   padding-right: 5px;
   height: 100%;
@@ -199,7 +198,6 @@ html {
   max-width: 1110px;
   width: 100%;
   aspect-ratio: 16/9;
-  max-height: 600px;
 }
 .main .about-author {
   padding-left: 5px;
@@ -218,14 +216,12 @@ html {
   }
 }
 .main .about-author_container {
-  max-height: 145px;
   text-align: center;
 }
 .main .about-author_h2 {
   margin-left: auto;
   margin-right: auto;
   font-size: 32px;
-  max-height: 30px;
   max-width: 430px;
 }
 @media (max-width: 700px) {
@@ -235,7 +231,6 @@ html {
 }
 .main .about-author_p {
   max-width: 535px;
-  max-height: 70px;
   font-weight: 400;
   color: #727272;
   margin-top: 50px;
@@ -273,21 +268,19 @@ html {
 @media (max-width: 700px) {
   .main .about-works .about-works_projects {
     max-width: 70px;
+    max-height: 30px;
   }
 }
 .main .about-works .page {
   max-width: 50px;
-  max-height: 50px;
 }
 @media (max-width: 700px) {
   .main .about-works .page {
     max-width: 30px;
-    max-height: 30px;
   }
 }
 .main .about-works .page-div {
   max-width: 71px;
-  max-height: 44px;
   margin-left: 20px;
   align-self: center;
   color: white;
@@ -355,13 +348,11 @@ html {
   padding-left: 5px;
   padding-right: 5px;
   color: white;
-  max-width: 1110px;
   margin-right: auto;
   margin-left: auto;
 }
 .footer .footer_container .name {
   max-width: 130px;
-  max-height: 19px;
   font-size: 21px;
   line-height: 25px;
   margin-bottom: 20px;
@@ -374,7 +365,6 @@ html {
   }
 }
 .footer .footer_container .footer_rights {
-  max-height: 12px;
   max-width: 195px;
   font-weight: 400;
   font-size: 13px;
@@ -386,4 +376,8 @@ html {
     line-height: 15px;
     margin-bottom: 5px;
   }
+}
+
+.font500 {
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */
