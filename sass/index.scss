@@ -208,13 +208,18 @@ html {
     text-align: center;
   }
   .about-author_h2 {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 32px;
+    max-height: 30px;
+    max-width: 430px;
     @media (max-width: 700px) {
       font-size: 24px;
     }
   }
   .about-author_p {
     max-width: 535px;
+    max-height: 70px;
 
     font-weight: 400;
     color: #727272;
@@ -259,7 +264,10 @@ html {
       }
     }
     .page-div {
+      max-width: 71px;
+      max-height: 44px;
       margin-left: 20px;
+      align-self: center;
       color: white;
       line-height: 24.7px;
       @media (max-width: 700px) {
@@ -324,7 +332,7 @@ html {
     margin-right: auto;
     margin-left: auto;
     .name {
-      max-width: 195px;
+      max-width: 130px;
       max-height: 19px;
 
       font-size: 21px;
