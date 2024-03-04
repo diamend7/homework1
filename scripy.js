@@ -10,8 +10,8 @@ $(`.nav-link`).click(function (e) {
   $(".nav-link").removeClass("activebutton");
   $(".tab-pane").removeClass("activepar");
 
-  $(databutton).addClass(`activebutton`);
   $(databutton).addClass(`activepar`);
-  $(".nav-link").removeClass("activepar");
-  // я багато видаляв, нічого не працювало, це теж не працює як хотів через таргети
+  $(thisbutton).addClass(`activebutton`);
+
+  $(".tab-pane").removeClass("activebutton");
 });
