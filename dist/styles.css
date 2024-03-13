@@ -13,15 +13,6 @@ html {
   width: 100%;
 }
 
-.productsListMain:hover {
-  display: block;
-  background-color: aqua;
-}
-
-.productsList > .productsListMain:hover {
-  background-color: aqua;
-}
-
 .menu {
   display: flex;
   font-size: 28px;
@@ -66,4 +57,18 @@ html {
 }
 .menu li {
   list-style: none;
+}
+
+.item:hover {
+  background-color: rgb(50, 175, 233);
+}
+.item:hover .productsList {
+  display: block;
+}
+.item:hover .productsList li:hover {
+  background-color: rgb(50, 175, 233);
+}
+
+.productsList > .item:hover {
+  background-color: rgb(50, 175, 233);
 }/*# sourceMappingURL=styles.css.map */

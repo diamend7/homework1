@@ -11,13 +11,6 @@ html {
   max-width: 300px;
   width: 100%;
 }
-.productsListMain:hover {
-  display: block;
-  background-color: aqua;
-}
-.productsList > .productsListMain:hover {
-  background-color: aqua;
-}
 
 .menu {
   display: flex;
@@ -68,4 +61,16 @@ html {
   li {
     list-style: none;
   }
+}
+.item:hover {
+  background-color: rgb(50, 175, 233);
+  .productsList {
+    display: block;
+    li:hover {
+      background-color: rgb(50, 175, 233);
+    }
+  }
+}
+.productsList > .item:hover {
+  background-color: rgb(50, 175, 233);
 }
