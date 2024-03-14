@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+// body {
+//   margin-left: 50px;
+// }
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -20,14 +23,18 @@ html {
   background-color: rgb(44, 44, 44);
   color: white;
   border-bottom: rgb(50, 175, 233) solid 10px;
+  .hovermain {
+    max-width: 200px;
+  }
 
   .productsListMain {
+    position: relative;
     max-width: 200px;
+
     width: 100%;
     max-height: 80px;
 
     a {
-      max-width: 200px;
       width: 100%;
       max-height: 85px;
     }
@@ -37,7 +44,7 @@ html {
       position: absolute;
       display: none;
       color: black;
-      max-width: 300px;
+
       width: 100%;
 
       li {
@@ -56,12 +63,13 @@ html {
     display: inline-block;
     color: white;
     padding: 25px 30px;
-    max-width: 150px;
+    max-width: 170px;
   }
   li {
     list-style: none;
   }
 }
+
 .item:hover {
   background-color: rgb(50, 175, 233);
   .productsList {
@@ -73,4 +81,47 @@ html {
 }
 .productsList > .item:hover {
   background-color: rgb(50, 175, 233);
+}
+.productsList_under,
+.productsList_under2 {
+  display: none;
+  left: 200px;
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+  li {
+    cursor: pointer;
+
+    max-height: 80px;
+
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.103);
+    border-radius: 2px;
+
+    background-color: rgb(55, 167, 231);
+  }
+  a {
+    padding: 0;
+  }
+}
+.productsList_under {
+  top: 0px;
+}
+.productsList_under2 {
+  top: 80px;
+}
+.displayblock {
+  display: block;
+}
+.backgroundcolorblue {
+  background-color: rgb(50, 175, 233);
+}
+.ellipsis {
+  //я читав але коли добавляю у род.єлемент  overflow усе пропадає
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+#product1::after,
+#product2:after {
+  content: "  +";
 }
