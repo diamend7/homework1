@@ -9,7 +9,7 @@ html {
 }
 
 .productwidth {
-  max-width: 300px;
+  width: 300px;
   width: 100%;
 }
 
@@ -80,13 +80,12 @@ html {
   display: none;
   left: 200px;
   position: absolute;
-  max-width: 200px;
-  width: 100%;
+  width: 200px;
 }
 .productsList_under li,
 .productsList_under2 li {
   cursor: pointer;
-  max-height: 80px;
+  height: 80px;
   color: white;
   border: 2px solid rgba(0, 0, 0, 0.103);
   border-radius: 2px;
