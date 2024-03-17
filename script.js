@@ -1,19 +1,30 @@
-$(`#product1, .productsList_under `).mouseenter(function () {
-  $(`.productsList_under`).addClass(`displayblock`);
-  $(`#product1`).css(`backgroundColor`, `rgb(50, 175, 233)`);
-});
-$(`#product1, .productsList_under`).mouseleave(function () {
-  $(`.productsList_under`).removeClass(`displayblock`);
-  $(`#product1`).css(`backgroundColor`, `rgb(55, 167, 231)`);
+const product = document.getElementsByClassName(`product`);
+productid = $(product).attr(`id`);
+
+$(".product").mouseenter(function () {
+  let targetId = $(this).data("target");
+  $(".product").css(`backgroundColor`, `rgb(55, 167, 231)`);
+  $(this).css(`backgroundColor`, `rgb(50, 175, 233)`);
+  $(`.listitems`).removeClass("displayblock");
+  $("#" + targetId).addClass("displayblock");
 });
 
-$(`#product2, .productsList_under2 `).mouseenter(function () {
-  $(`.productsList_under2`).addClass(`displayblock`);
-  $(`#product2`).css(`backgroundColor`, `rgb(50, 175, 233)`);
+$(".listitems").mouseleave(function () {
+  let targetId = $(this).data("target");
+  $(".product").css(`backgroundColor`, `rgb(55, 167, 231)`);
+  $(this).css(`backgroundColor`, `rgb(50, 175, 233)`);
+  $(`.listitems`).removeClass("displayblock");
 });
-$(`#product2, .productsList_under2`).mouseleave(function () {
-  $(`.productsList_under2`).removeClass(`displayblock`);
-  $(`#product2`).css(`backgroundColor`, `rgb(55, 167, 231)`);
+$(`.productsList`).mouseleave(function () {
+  $(`.listitems`).removeClass("displayblock");
+  $(".product").css(`backgroundColor`, `rgb(55, 167, 231)`);
+  console.log(`yee`);
 });
 
-let listlenght = document.getElementsByClassName(`productsList_under`);
+let topvalue = 80;
+const listItems = document.querySelectorAll(`.listitems`);
+console.log(listItems.length);
+for (let i = 1; i < listItems.length; i++) {
+  $(listItems[i]).css(`top`, topvalue + `px`);
+  topvalue += 78;
+}

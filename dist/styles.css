@@ -13,6 +13,10 @@ html {
   width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 .menu {
   display: flex;
   font-size: 28px;
@@ -42,7 +46,7 @@ html {
   color: black;
   width: 100%;
 }
-.menu .productsListMain .productsList li {
+.menu .productsListMain .productsList .liar {
   cursor: pointer;
   padding: 20px 35px;
   color: white;
@@ -54,10 +58,11 @@ html {
   text-decoration: none;
   display: inline-block;
   color: white;
+  overflow: hidden;
   padding: 25px 30px;
   max-width: 170px;
 }
-.menu li {
+.menu .liar {
   list-style: none;
 }
 
@@ -67,7 +72,7 @@ html {
 .item:hover .productsList {
   display: block;
 }
-.item:hover .productsList li:hover {
+.item:hover .productsList .liar:hover {
   background-color: rgb(50, 175, 233);
 }
 
@@ -82,8 +87,8 @@ html {
   position: absolute;
   width: 200px;
 }
-.productsList_under li,
-.productsList_under2 li {
+.productsList_under .liar,
+.productsList_under2 .liar {
   cursor: pointer;
   height: 80px;
   color: white;
@@ -94,14 +99,6 @@ html {
 .productsList_under a,
 .productsList_under2 a {
   padding: 0;
-}
-
-.productsList_under {
-  top: 0px;
-}
-
-.productsList_under2 {
-  top: 80px;
 }
 
 .displayblock {
@@ -117,7 +114,10 @@ html {
   text-wrap: nowrap;
 }
 
-#product1::after,
-#product2:after {
+.product:after {
   content: "  +";
+}
+
+#onehead {
+  top: 0;
 }/*# sourceMappingURL=styles.css.map */
