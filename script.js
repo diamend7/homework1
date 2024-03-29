@@ -1,19 +1,19 @@
-// const formatedlist = logininfo.map((datenew) => {
-//   const date = new Date(datenew.last_login);
-//   const newformat = date.getTime() / 1000;
+const formatedlist = logininfo.map((datenew) => {
+  const date = new Date(datenew.last_login);
+  const newformat = date.getTime() / 1000;
 
-//   return newformat;
-// });
+  return newformat;
+});
 
-// const filteredformatedList = formatedlist.filter((element) => !isNaN(element));
+const filteredformatedList = formatedlist.filter((element) => !isNaN(element));
 
-// const finallist = filteredformatedList.sort(function (a, b) {
-//   return b - a;
-// });
+const finallist = filteredformatedList.sort(function (a, b) {
+  return b - a;
+});
 
-// console.log(finallist);
-// console.log(`останній: ` + finallist[0]);
-// console.log("найдавніше: " + finallist[finallist.length - 1]);
+console.log(finallist);
+console.log(`останній: ` + finallist[0]);
+console.log("найдавніше: " + finallist[finallist.length - 1]);
 
 const sortedAge = generalinfo.sort(function (a, b) {
   return a.age - b.age;
