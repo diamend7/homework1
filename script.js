@@ -2,18 +2,21 @@ const formatedlist = logininfo.map((datenew) => {
   const date = new Date(datenew.last_login);
   const newformat = date.getTime() / 1000;
 
-  return newformat;
+  return { datenew, newformat };
 });
 
-const filteredformatedList = formatedlist.filter((element) => !isNaN(element));
+const filteredformatedList = formatedlist.filter(
+  (element) => !isNaN(element.newformat)
+);
 
 const finallist = filteredformatedList.sort(function (a, b) {
-  return b - a;
+  return b.newformat - a.newformat;
 });
 
-console.log(finallist);
-console.log(`останній: ` + finallist[0]);
-console.log("найдавніше: " + finallist[finallist.length - 1]);
+console.log(`останній: ` + finallist[0].datenew.given_name);
+console.log(
+  "найдавніше: " + finallist[finallist.length - 1].datenew.given_name
+);
 
 const sortedAge = generalinfo.sort(function (a, b) {
   return a.age - b.age;
