@@ -66,8 +66,8 @@ slicedDifference.forEach((onecard) => {
 
   description.innerHTML = `
   <h2 class="fullname">${onecard.age.firstName} ${onecard.age.lastName}</h2>
-  <p class="phone">${onecard.age.phone}</p>
-  <p class="gmail">${onecard.age.email}</p>`;
+  <p class="phone">T: <a href = "tel:${onecard.age.phone}">${onecard.age.phone} </a></p>
+  <p class="gmail">E: <a href = "mailto:${onecard.age.email}">${onecard.age.email}</a></p>`;
 
   $(main).append(card);
   $(card).append(avatar);
