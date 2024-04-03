@@ -37,7 +37,7 @@ form.addEventListener(`submit`, () => {
         visibility: `hidden`,
       });
     }
-  }, 500);
+  }, 1000);
 
   $(`#reset`).click(function (e) {
     e.preventDefault();
@@ -88,7 +88,7 @@ form.addEventListener(`submit`, () => {
             visibility: `hidden`,
           });
         }
-      }, 500);
+      }, 1000);
 
       $(`#resume`).css({
         visibility: `hidden`,
