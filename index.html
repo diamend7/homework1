@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body>
+    <main>
+      <div class="timer">
+        <form id="timerForm">
+          <label>
+            <span>Enter timer in seconds:</span>
+            <input type="number" id="timerCount" placeholder="sec" />
+          </label>
+          <br />
+          <div class="splusr">
+            <button type="submit" id="start">Start</button>
+            <button id="reset">Reset</button>
+          </div>
+          <div class="resumestop">
+            <button id="stop">Stop</button>
+            <button id="resume">Resume</button>
+          </div>
+        </form>
+        <br />
+
+        <p>Timer result: <span id="result">0:0:0</span></p>
+      </div>
+    </main>
+    <script src="assets/jquery-3.7.1.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
