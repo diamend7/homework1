@@ -127,6 +127,11 @@ header #LawCompany {
   background-color: #f5f5fa;
   border-radius: 8px;
 }
+@media (max-width: 655px) {
+  #language .unactivebutton:hover:hover {
+    background-color: white;
+  }
+}
 #language .activebutton {
   border-radius: 8px;
   color: white;

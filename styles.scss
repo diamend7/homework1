@@ -124,6 +124,11 @@ header {
   .unactivebutton:hover {
     background-color: #f5f5fa;
     border-radius: 8px;
+    @media (max-width: 655px) {
+      &:hover {
+        background-color: #ffff;
+      }
+    }
   }
   .activebutton {
     border-radius: 8px;
