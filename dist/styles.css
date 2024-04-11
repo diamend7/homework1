@@ -80,7 +80,7 @@ header #LawCompany {
 @media (max-width: 655px) {
   .headerleftpart {
     max-height: 57px;
-    height: 100%;
+    margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
   }
