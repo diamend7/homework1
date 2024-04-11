@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Monsteratt";
+  src: url("Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Monsteratt";
+  src: url("Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Monsteratt";
+  src: url("Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Monsteratt";
+  src: url("Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}

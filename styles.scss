@@ -3,3 +3,566 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: Monsteratt;
+  font-weight: 700;
+}
+
+header {
+  margin-left: 5px;
+  margin-top: 50px;
+  grid-template:
+    "a  .  b"
+    "a  .  c"
+    "a  .  c";
+  display: grid;
+  @media (max-width: 915px) {
+    grid-template:
+      "b  b  b"
+      "a  a  a"
+      "c  c  c";
+    gap: 30px;
+  }
+  @media (max-width: 655px) {
+    margin-top: 0;
+    gap: 0px;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    transform: scale(1, 1.15);
+
+    font-size: 40px;
+
+    color: #323264;
+    font-weight: 600;
+    @media (max-width: 655px) {
+      font-size: 28px;
+    }
+  }
+  #letterH,
+  #symbolh1 {
+    color: #f0145a;
+  }
+  #symbolh1 {
+    position: relative;
+
+    top: 4px;
+  }
+  #wordTeam {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 36px;
+    color: #323264;
+    letter-spacing: 0;
+    @media (max-width: 655px) {
+      font-size: 26px;
+    }
+  }
+  #LawCompany {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 7px;
+    margin-left: 3px;
+    @media (max-width: 655px) {
+      font-size: 7px;
+    }
+  }
+}
+.headerleftpart {
+  position: relative;
+  grid-area: a;
+  @media (max-width: 655px) {
+    max-height: 57px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #hamburger {
+    display: none;
+    @media (max-width: 655px) {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      right: 15px;
+      top: calc(50% - 16px);
+      width: 32px;
+      height: 32px;
+      &:hover {
+        background-color: #e6e6f0;
+        border-radius: 8px;
+      }
+      span {
+        max-width: 18px;
+        width: 100%;
+        height: 2px;
+        background-color: #323264;
+      }
+      .active {
+      }
+    }
+  }
+}
+#language {
+  display: inline-block;
+  max-width: 105px;
+  @media (max-width: 655px) {
+  }
+
+  .languagebutton {
+    max-width: 33px;
+    color: #b3b3ba;
+    font-size: 12px;
+    padding: 5px 7px 5px 7px;
+  }
+  .unactivebutton:hover {
+    background-color: #f5f5fa;
+    border-radius: 8px;
+  }
+  .activebutton {
+    border-radius: 8px;
+    color: white;
+    background-color: #f0145a;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+#smallsizegridoptions {
+  grid-area: c;
+  display: grid;
+  justify-content: end;
+  max-height: 30px;
+  #jesuschrist {
+    display: none;
+    position: absolute;
+  }
+
+  @media (max-width: 915px) {
+    justify-content: start;
+  }
+  @media (max-width: 655px) {
+    display: none;
+  }
+}
+#smallsizegridoptions.active {
+  display: block;
+  position: fixed;
+  max-height: 100%;
+  inset: 0;
+  background-color: rgba($color: #323264, $alpha: 70%);
+  z-index: 4;
+  .optionstocontact {
+    position: absolute;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    max-height: 351px;
+    height: 100%;
+    opacity: 100%;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+    background-color: #ffff;
+    #jesuschrist {
+      display: block;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      right: 12px;
+      top: 12px;
+      width: 32px;
+      height: 32px;
+      &:hover {
+        background-color: #e6e6f0;
+        border-radius: 8px;
+      }
+      span {
+        max-width: 22px;
+        width: 100%;
+        height: 2px;
+        background-color: #ec6f5d;
+      }
+      span:first-child {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 2px;
+      }
+      span:last-child {
+        transform: rotate(45deg);
+      }
+    }
+    #aboutus {
+      margin-top: 64px;
+    }
+    .option {
+      font-size: 24px;
+      max-height: 43px;
+      display: flex;
+      flex-direction: column;
+      margin: 15px 12px 15px 12px;
+      padding: 7px 0;
+      background-color: #f5f5fa;
+      border-radius: 12px;
+      &:hover {
+        color: #f0145a;
+        border-bottom: none;
+        height: auto;
+        background-color: #e6e6f0;
+      }
+    }
+  }
+}
+.parameters {
+  grid-area: b;
+  justify-self: end;
+
+  max-height: 25px;
+  color: #b3b3ba;
+  @media (max-width: 915px) {
+    justify-self: start;
+  }
+  @media (max-width: 655px) {
+    background-color: #f5f5fa;
+    position: relative;
+    width: 100%;
+    max-height: 45px;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dots {
+    @media (max-width: 655px) {
+      display: none;
+    }
+  }
+  #number {
+    @media (max-width: 655px) {
+      position: absolute;
+      right: 15px;
+      top: 30%;
+
+      text-wrap: nowrap;
+    }
+  }
+
+  #location {
+    max-width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width: 655px) {
+      display: none;
+    }
+  }
+  #facebook {
+    max-width: 24px;
+    max-height: 24px;
+    vertical-align: middle;
+  }
+  #facebookbutton {
+    max-width: 24px;
+    max-height: 24px;
+    @media (max-width: 655px) {
+      display: none;
+    }
+  }
+  #facebookbutton:hover #facebookhover {
+    fill: #f0145a;
+  }
+}
+
+.optionstocontact {
+  min-height: 25px;
+  margin-top: 16px;
+
+  @media (max-width: 915px) {
+    margin-top: 0;
+  }
+
+  .option {
+    color: #24a3ff;
+    line-height: 30px; //+5 дистанция
+    margin-left: 15px;
+    border-bottom: none;
+    text-decoration: none;
+
+    cursor: pointer;
+    &:hover {
+      color: #f0145a;
+      border-bottom: 2px #f0145a solid; // выполняет ту же функцию сообственно почему нет
+      height: 30px;
+    }
+  }
+  #aboutus {
+    margin-left: 62px;
+    @media (max-width: 915px) {
+      margin-left: 0;
+    }
+  }
+}
+.dots {
+  position: relative;
+  bottom: 5px;
+  transform: scale(1.5);
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.graydot {
+  color: #e6e6f0;
+}
+.blackgraydot {
+  color: #b3b3ba;
+}
+.displayline {
+  display: inline-block;
+}
+.marginLR {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1605px) and (min-width: 1325px) {
+    max-width: 1320px;
+  }
+  @media (max-width: 1325px) and (min-width: 915px) {
+    max-width: 904px;
+  }
+  @media (max-width: 915px) and (min-width: 655px) {
+    max-width: 648px;
+  }
+  @media (max-width: 655px) {
+    max-width: 315px;
+  }
+}
+.headercontain {
+  @media (max-width: 655px) {
+    max-width: 100%;
+  }
+}
+
+// @media (max-width: 1605px) and (min-width: 1325px) {
+// }
+main {
+  #h1 {
+    max-width: 1360px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    color: #f0145a;
+    font-size: 38px;
+    max-lines: 2;
+    @media (max-width: 1605px) and (min-width: 1325px) {
+      max-width: 1080px;
+      max-lines: 3;
+    }
+    @media (max-width: 1325px) and (min-width: 915px) {
+      max-width: 664px;
+      max-lines: 5;
+    }
+    @media (max-width: 915px) and (min-width: 655px) {
+      max-width: 648px;
+      max-lines: 5;
+    }
+    @media (max-width: 655px) {
+      max-lines: 8;
+      max-width: 315px;
+      font-size: 30px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+  #imagesSection {
+    width: 100%;
+    max-height: 985px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    @media (max-width: 915px) and (min-width: 655px) {
+      max-height: 1506px;
+    }
+    @media (max-width: 655px) {
+      max-height: 2322px;
+      gap: 30px;
+    }
+    .card {
+      max-width: 493.33px;
+      width: 100%;
+      height: 462px;
+      @media (max-width: 1605px) and (min-width: 1325px) {
+        max-width: 400px;
+      }
+      @media (max-width: 1325px) and (min-width: 915px) {
+        max-width: 261.33px;
+      }
+      @media (max-width: 915px) and (min-width: 655px) {
+        max-width: 294px;
+      }
+      @media (max-width: 655px) {
+        max-width: 315px;
+        height: 362px;
+      }
+      .image {
+        max-width: 493.33px;
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        border-radius: 12px;
+        @media (max-width: 655px) {
+          max-width: 315px;
+          height: 300px;
+        }
+      }
+      .aboutUser {
+        margin-top: 15px;
+        a {
+          text-decoration: none;
+        }
+        .namePlusArrow {
+          position: relative;
+        }
+        .namePlusArrow:hover .name {
+          color: #f0145a;
+        }
+        .namePlusArrow:hover .arrow1 {
+          stroke: #f0145a;
+        }
+
+        .arrow {
+          fill: #24a3ff;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .name {
+          font-size: 16px;
+          line-height: 19.5px;
+          color: #323264;
+        }
+        .proffesion {
+          color: #b3b3ba;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  a {
+    text-decoration: none;
+  }
+
+  background-color: #f5f5fa;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .contactsfooter {
+    line-height: 19.5px;
+
+    #locationfooter {
+      font-size: 16px;
+      font-weight: 400;
+
+      max-width: 197px;
+      color: #323264;
+      @media (max-width: 655px) {
+        margin-top: 10px;
+        max-width: 100%;
+      }
+    }
+    #onmap {
+      color: #24a3ff;
+      font-size: 12px;
+      line-height: 15px;
+      vertical-align: 1px;
+      @media (max-width: 655px) {
+        margin-top: 10px;
+      }
+
+      &:hover {
+        color: #f0145a;
+      }
+    }
+  }
+  .morecontactsfooter {
+    max-height: 38px;
+    margin-top: 21px;
+    max-width: 400px;
+    @media (max-width: 655px) {
+      max-height: 98px;
+    }
+    #facebookdown {
+      vertical-align: middle;
+    }
+    #facebookdown:hover #facebooktwo {
+      fill: #f0145a;
+    }
+    #numberfooter {
+      font-size: 16px;
+      color: #46466e;
+    }
+    #email {
+      color: #24a3ff;
+      font-size: 16px;
+      &:hover {
+        color: #f0145a;
+      }
+    }
+  }
+  .rights {
+    top: 0;
+    right: 0;
+    position: absolute;
+    @media (max-width: 915px) and (min-width: 655px) {
+      text-align: center;
+    }
+    @media (max-width: 915px) {
+      position: relative;
+      margin-top: 30px;
+    }
+
+    #company {
+      color: #b3b3ba;
+      font-size: 16px;
+      line-height: 19.5px;
+      font-weight: 400;
+    }
+  }
+}
+#allinfooter {
+  position: relative;
+  @media (max-width: 915px) and (min-width: 655px) {
+    max-width: 400px;
+  }
+  @media (max-width: 655px) {
+    max-width: 315px;
+    max-height: 214px;
+
+    .displayline {
+      display: block;
+    }
+    .dots {
+      display: none;
+    }
+    text-align: center;
+  }
+}
