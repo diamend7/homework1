@@ -21,7 +21,7 @@ header {
     gap: 30px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   header {
     margin-top: 0;
     gap: 0px;
@@ -35,7 +35,7 @@ header h2 {
   color: #323264;
   font-weight: 600;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   header h2 {
     font-size: 28px;
   }
@@ -55,7 +55,7 @@ header #wordTeam {
   color: #323264;
   letter-spacing: 0;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   header #wordTeam {
     font-size: 26px;
   }
@@ -67,7 +67,7 @@ header #LawCompany {
   margin-top: 7px;
   margin-left: 3px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   header #LawCompany {
     font-size: 7px;
   }
@@ -77,7 +77,7 @@ header #LawCompany {
   position: relative;
   grid-area: a;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .headerleftpart {
     max-height: 57px;
     margin-top: 15px;
@@ -88,7 +88,7 @@ header #LawCompany {
 .headerleftpart #hamburger {
   display: none;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .headerleftpart #hamburger {
     position: absolute;
     display: flex;
@@ -101,15 +101,15 @@ header #LawCompany {
     width: 32px;
     height: 32px;
   }
-  .headerleftpart #hamburger:hover {
-    background-color: #e6e6f0;
-    border-radius: 8px;
-  }
   .headerleftpart #hamburger span {
     max-width: 18px;
     width: 100%;
     height: 2px;
     background-color: #323264;
+  }
+  .headerleftpart #hamburger:hover {
+    background-color: #e6e6f0;
+    border-radius: 8px;
   }
 }
 
@@ -127,7 +127,7 @@ header #LawCompany {
   background-color: #f5f5fa;
   border-radius: 8px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #language .unactivebutton:hover:hover {
     background-color: white;
   }
@@ -157,7 +157,7 @@ header #LawCompany {
     justify-content: start;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #smallsizegridoptions {
     display: none;
   }
@@ -245,7 +245,7 @@ header #LawCompany {
     justify-self: start;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .parameters {
     background-color: #f5f5fa;
     position: relative;
@@ -258,12 +258,12 @@ header #LawCompany {
     padding-right: 15px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .parameters .dots {
     display: none;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .parameters #number {
     position: absolute;
     right: 15px;
@@ -276,7 +276,7 @@ header #LawCompany {
   font-size: 16px;
   font-weight: 400;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .parameters #location {
     display: none;
   }
@@ -290,7 +290,7 @@ header #LawCompany {
   max-width: 24px;
   max-height: 24px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .parameters #facebookbutton {
     display: none;
   }
@@ -373,18 +373,18 @@ header #LawCompany {
     max-width: 904px;
   }
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   .container {
     max-width: 648px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .container {
     max-width: 315px;
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   .headercontain {
     max-width: 100%;
   }
@@ -410,13 +410,13 @@ main #h1 {
     max-lines: 5;
   }
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   main #h1 {
     max-width: 648px;
     max-lines: 5;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   main #h1 {
     max-lines: 8;
     max-width: 315px;
@@ -433,12 +433,12 @@ main #imagesSection {
   flex-wrap: wrap;
   gap: 60px;
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   main #imagesSection {
     max-height: 1506px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   main #imagesSection {
     max-height: 2322px;
     gap: 30px;
@@ -459,12 +459,12 @@ main #imagesSection .card {
     max-width: 261.33px;
   }
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   main #imagesSection .card {
     max-width: 294px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   main #imagesSection .card {
     max-width: 315px;
     height: 362px;
@@ -478,7 +478,7 @@ main #imagesSection .card .image {
   height: 400px;
   border-radius: 12px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   main #imagesSection .card .image {
     max-width: 315px;
     height: 300px;
@@ -535,7 +535,7 @@ main #imagesSection .card .aboutUser .proffesion {
   max-width: 197px;
   color: #323264;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #footer .contactsfooter #locationfooter {
     margin-top: 10px;
     max-width: 100%;
@@ -547,7 +547,7 @@ main #imagesSection .card .aboutUser .proffesion {
   line-height: 15px;
   vertical-align: 1px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #footer .contactsfooter #onmap {
     margin-top: 10px;
   }
@@ -560,7 +560,7 @@ main #imagesSection .card .aboutUser .proffesion {
   margin-top: 21px;
   max-width: 400px;
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #footer .morecontactsfooter {
     max-height: 98px;
   }
@@ -587,7 +587,7 @@ main #imagesSection .card .aboutUser .proffesion {
   right: 0;
   position: absolute;
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   #footer .rights {
     text-align: center;
   }
@@ -608,12 +608,12 @@ main #imagesSection .card .aboutUser .proffesion {
 #allinfooter {
   position: relative;
 }
-@media (max-width: 915px) and (min-width: 655px) {
+@media (max-width: 915px) and (min-width: 665px) {
   #allinfooter {
     max-width: 400px;
   }
 }
-@media (max-width: 655px) {
+@media (max-width: 665px) {
   #allinfooter {
     max-width: 315px;
     max-height: 214px;
