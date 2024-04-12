@@ -566,6 +566,10 @@ main {
       &:hover {
         color: #f0145a;
       }
+      @media (max-width: 685px) {
+        margin-top: 10px;
+        display: block;
+      }
     }
   }
   .rights {

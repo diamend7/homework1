@@ -618,6 +618,12 @@ main #imagesSection .card .aboutUser .proffesion {
 #footer .morecontactsfooter #email:hover {
   color: #f0145a;
 }
+@media (max-width: 685px) {
+  #footer .morecontactsfooter #email {
+    margin-top: 10px;
+    display: block;
+  }
+}
 #footer .rights {
   top: 0;
   right: 0;
