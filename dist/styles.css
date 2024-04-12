@@ -611,6 +611,12 @@ main #imagesSection .card .aboutUser .proffesion {
   color: #46466e;
   text-decoration: none;
 }
+@media (max-width: 685px) {
+  #footer .morecontactsfooter #numberfooter {
+    margin-top: 10px;
+    display: block;
+  }
+}
 #footer .morecontactsfooter #email {
   color: #24a3ff;
   font-size: 16px;
