@@ -53,26 +53,22 @@ class Student extends User {
       if (emptyIndex !== -1) {
         this.#_rates[emptyIndex] = rate;
       }
+    } else {
+      console.log(`Rate ${rate} is not valid value. Should be from 0 to 10`);
     }
   }
 
-  present(bollitrue) {
-    if (bollitrue === true) {
-      const emptyIndex = this.#_activity.findIndex((bal) => bal === undefined);
-
-      if (emptyIndex !== -1) {
-        this.#_activity[emptyIndex] = 1;
-      }
+  present() {
+    const emptyIndex = this.#_activity.findIndex((bal) => bal === undefined);
+    if (emptyIndex !== -1) {
+      this.#_activity[emptyIndex] = 1;
     }
   }
 
-  absent(bollifalse) {
-    if (bollifalse === false) {
-      const emptyIndex = this.#_activity.findIndex((bal) => bal === undefined);
-
-      if (emptyIndex !== -1) {
-        this.#_activity[emptyIndex] = 0;
-      }
+  absent() {
+    const emptyIndex = this.#_activity.findIndex((bal) => bal === undefined);
+    if (emptyIndex !== -1) {
+      this.#_activity[emptyIndex] = 0;
     }
   }
 
@@ -93,11 +89,23 @@ class Student extends User {
 
   summary() {
     if (this.mediumMark() > 9 && this.mediumVisit() > 0.9) {
-      return `Середня оцінка: ${this.mediumMark()} Середнє відвідування: ${this.mediumVisit()} Молодець! Так тримати!`;
+      return `Середня оцінка: ${this.mediumMark().toFixed(
+        2
+      )} Середнє відвідування: ${this.mediumVisit().toFixed(
+        2
+      )} Молодець! Так тримати!`;
     } else if (this.mediumMark() > 9 || this.mediumVisit() > 0.9) {
-      return `Середня оцінка: ${this.mediumMark()} Середнє відвідування: ${this.mediumVisit()} Норм. Але можна постаратись і краще.`;
+      return `Середня оцінка: ${this.mediumMark().toFixed(
+        2
+      )} Середнє відвідування: ${this.mediumVisit().toFixed(
+        2
+      )} Норм. Але можна постаратись і краще.`;
     } else {
-      return `Середня оцінка: ${this.mediumMark()} Середнє відвідування: ${this.mediumVisit()} Погано! Так ти нічому не навчишся.`;
+      return `Середня оцінка: ${this.mediumMark().toFixed(
+        2
+      )} Середнє відвідування: ${this.mediumVisit().toFixed(
+        2
+      )} Погано! Так ти нічому не навчишся.`;
     }
   }
 }
@@ -110,13 +118,13 @@ student.setMark(10);
 student.setMark("A");
 
 // student.present(false);
-student.present(true);
-student.absent(false);
-student.absent(false);
-student.present(true);
-student.absent(false);
-student.present(true);
-student.present(true);
+student.present();
+student.absent();
+student.absent();
+student.present();
+student.absent();
+student.present();
+student.present();
 
 console.log(student.summary());
 // console.log(student.mediumVisit());
