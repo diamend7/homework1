@@ -5,7 +5,7 @@ class Slider {
     nav: true,
     infinite: true,
     pauseIfMouseOver: false,
-    dots: false,
+    dots: true,
   };
   activeDots;
   activeDot;
