@@ -930,7 +930,7 @@ main #imagesSection .card .aboutUser .proffesion {
 .rightsection #ContactForm #phone:focus {
   border: #24a3ff 1px solid;
 }
-.rightsection #ContactForm #email {
+.rightsection #ContactForm #FormEmail {
   line-height: 26px;
   margin-top: 15px;
   display: block;
@@ -941,17 +941,17 @@ main #imagesSection .card .aboutUser .proffesion {
   border: white 1px solid;
   border-radius: 8px;
 }
-.rightsection #ContactForm #email::-moz-placeholder {
+.rightsection #ContactForm #FormEmail::-moz-placeholder {
   color: #b3b3ba;
   font-weight: 400;
   font-family: Monsteratt;
 }
-.rightsection #ContactForm #email::placeholder {
+.rightsection #ContactForm #FormEmail::placeholder {
   color: #b3b3ba;
   font-weight: 400;
   font-family: Monsteratt;
 }
-.rightsection #ContactForm #email:focus {
+.rightsection #ContactForm #FormEmail:focus {
   border: #24a3ff 1px solid;
 }
 .rightsection #ContactForm #FormButton {
