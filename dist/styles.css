@@ -324,26 +324,24 @@ header #LawCompany {
   color: #24a3ff;
   line-height: 30px;
   margin-left: 15px;
-  border-bottom: none;
+  border-bottom: 2px white solid;
   text-decoration: none;
   cursor: pointer;
 }
 .optionstocontact .option:hover {
   color: #24a3ff;
   border-bottom: 2px #24a3ff solid;
-  height: 30px;
 }
 .optionstocontact .activeoption {
   color: #f0145a;
   border-bottom: 2px #f0145a solid;
-  line-height: 26px;
+  line-height: 30px;
   margin-left: 15px;
   text-decoration: none;
 }
 .optionstocontact .activeoption:hover {
   color: #f0145a;
   border-bottom: 2px #f0145a solid;
-  height: 28px;
 }
 .optionstocontact #aboutus {
   margin-left: 62px;
@@ -673,4 +671,317 @@ main #imagesSection .card .aboutUser .proffesion {
   #allinfooter .dots {
     display: none;
   }
+}
+
+.maincontainer {
+  text-wrap: nowrap;
+  max-width: 1380px;
+  padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 1640px) and (min-width: 1360px) {
+  .maincontainer {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1360px) and (min-width: 960px) {
+  .maincontainer {
+    max-width: 904px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  .maincontainer {
+    max-width: 668px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 685px) {
+  .maincontainer {
+    text-wrap: wrap;
+    max-width: 315px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+  }
+}
+
+.leftmainsection {
+  vertical-align: top;
+  max-width: 650px;
+  width: 100%;
+  margin-right: 60px;
+}
+@media (max-width: 1640px) and (min-width: 1360px) {
+  .leftmainsection {
+    max-width: 510px;
+  }
+}
+@media (max-width: 1360px) and (min-width: 960px) {
+  .leftmainsection {
+    max-width: 420px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  .leftmainsection {
+    max-width: 645px;
+    max-height: 300px;
+    display: block;
+  }
+}
+@media (max-width: 685px) {
+  .leftmainsection {
+    margin-bottom: 30px;
+  }
+}
+.leftmainsection .LeftLocation {
+  color: #323264;
+  font-weight: 400;
+  font-size: 21px;
+  max-height: 60px;
+}
+.leftmainsection .grayLine {
+  height: 4px;
+  width: 100%;
+  background-color: #e6e6f0;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.leftmainsection .LeftOwns {
+  max-height: 75px;
+  font-size: 21px;
+  font-weight: 400;
+}
+.leftmainsection .LeftOwns #LeftNumber {
+  color: #46466e;
+  display: block;
+  text-decoration: none;
+  max-width: 135px;
+}
+.leftmainsection .LeftOwns #Leftemail {
+  margin-top: 15px;
+  color: #24a3ff;
+  display: block;
+  text-decoration: none;
+  max-width: 255px;
+}
+.leftmainsection .LeftOwns #Leftemail:hover {
+  color: #f0145a;
+}
+.leftmainsection .LeftFacebook {
+  max-width: 155px;
+  max-height: 38px;
+}
+.leftmainsection .LeftFacebook:hover #facebookLeft {
+  fill: #f0145a;
+}
+.leftmainsection .LeftFacebook:hover #LeftFacebookPage {
+  color: #f0145a;
+}
+.leftmainsection .LeftFacebook #LeftFacebookPage {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  vertical-align: super;
+}
+
+.rightsection {
+  max-width: 650px;
+  width: 100%;
+  max-height: 605px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  padding: 30px;
+}
+@media (max-width: 1640px) and (min-width: 1360px) {
+  .rightsection {
+    max-width: 510px;
+  }
+}
+@media (max-width: 1360px) and (min-width: 960px) {
+  .rightsection {
+    max-width: 420px;
+    max-height: 640px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  .rightsection {
+    max-width: 668px;
+    max-height: 605px;
+    margin-top: 60px;
+    display: block;
+  }
+}
+@media (max-width: 685px) {
+  .rightsection {
+    max-height: 640px;
+  }
+}
+.rightsection #h2Form {
+  font-size: 30px;
+  max-height: 37px;
+  max-width: 590px;
+  width: 100%;
+  background-image: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1360px) and (min-width: 960px) {
+  .rightsection #h2Form {
+    text-wrap: wrap;
+    max-height: 74px;
+  }
+}
+@media (max-width: 960px) {
+  .rightsection #h2Form {
+    text-wrap: wrap;
+    max-height: 74px;
+  }
+}
+.rightsection .borderRed {
+  border: #f0145a 1px solid;
+}
+.rightsection #ContactForm #name {
+  line-height: 26px;
+  margin-top: 30px;
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: white 1px solid;
+  border-radius: 8px;
+}
+.rightsection #ContactForm #name::-moz-placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #name::placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #name:focus {
+  border: #24a3ff 1px solid;
+}
+.rightsection #ContactForm textarea {
+  font-family: Monsteratt;
+  overflow: hidden;
+}
+.rightsection #ContactForm #message {
+  margin-top: 15px;
+  resize: none;
+  display: block;
+  padding: 15px;
+  height: 130px;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: white 1px solid;
+  border-radius: 8px;
+}
+.rightsection #ContactForm #message::-moz-placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+}
+.rightsection #ContactForm #message::placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+}
+.rightsection #ContactForm #message:focus {
+  border: #24a3ff 1px solid;
+}
+.rightsection #ContactForm #FormAnswer {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #b3b3ba;
+  text-transform: uppercase;
+}
+.rightsection #ContactForm #phone {
+  line-height: 26px;
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: white 1px solid;
+  border-radius: 8px;
+}
+.rightsection #ContactForm #phone::-moz-placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #phone::placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #phone:focus {
+  border: #24a3ff 1px solid;
+}
+.rightsection #ContactForm #email {
+  line-height: 26px;
+  margin-top: 15px;
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: white 1px solid;
+  border-radius: 8px;
+}
+.rightsection #ContactForm #email::-moz-placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #email::placeholder {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-family: Monsteratt;
+}
+.rightsection #ContactForm #email:focus {
+  border: #24a3ff 1px solid;
+}
+.rightsection #ContactForm #FormButton {
+  background-color: #24a3ff;
+  color: white;
+  font-family: Monsteratt;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5019607843);
+}
+.rightsection #ContactForm #FormButton:hover {
+  background-color: #0085ff;
+}
+.rightsection #ContactForm #FormButton:active {
+  background-color: #006ccf;
+}
+
+.placeholdersred::-moz-placeholder {
+  color: #f0145a;
+}
+
+.placeholdersred::placeholder {
+  color: #f0145a;
 }/*# sourceMappingURL=styles.css.map */
