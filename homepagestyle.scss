@@ -1,0 +1,361 @@
+#backgroundheader {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  max-width: 100%;
+  padding-bottom: 60px;
+  border-radius: 0px 0px 12px 12px;
+}
+#backgroundimage {
+  background-image: url(../images/Symbol.png);
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+}
+header {
+  margin-top: 0;
+  padding-top: 50px;
+
+  #symbolh1 {
+    display: none;
+  }
+  #wordTeam {
+    display: none !important;
+  }
+  #LawCompany {
+    color: white;
+  }
+  .headerleftpart h2 {
+    color: white;
+  }
+
+  .languagebutton {
+    color: white !important;
+  }
+  .unactivebutton {
+    &:hover {
+      background-color: #ffffff33 !important;
+    }
+  }
+  #location {
+    color: white !important;
+  }
+  #number {
+    color: white !important;
+  }
+  #facebookhover {
+    fill: white;
+  }
+}
+.optionstocontact {
+  .option {
+    color: white;
+    border-bottom: 2px #ffffff00 solid;
+    &:hover {
+      color: #ffff;
+      border-bottom: 2px #ffff solid;
+    }
+  }
+}
+
+.MiddleLetterandText {
+  display: flex;
+  min-height: 757px;
+  min-height: 855px;
+  justify-content: center;
+
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  #textinImg {
+    display: flex;
+    position: relative;
+    bottom: 45px;
+
+    color: white !important;
+
+    z-index: 8;
+    font-size: 38px;
+  }
+  #imgOfH {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    max-width: 1000px;
+  }
+}
+
+#DesriptionMenu {
+  margin-top: 60px;
+  display: flex;
+  height: 305px;
+  //   height: 100%;
+  justify-content: center;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    height: 380px;
+  }
+
+  #GeneralNames {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    margin-right: 60px;
+    width: 100%;
+    text-wrap: nowrap;
+
+    @media (max-width: 960px) {
+      flex-direction: row;
+      align-self: flex-start;
+      margin-right: 0;
+      margin-left: 60px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      max-width: 650px;
+    }
+    .unactiveName {
+      font-size: 38px;
+      line-height: 46.32px;
+      color: #b3b3ba;
+      @media (max-width: 960px) {
+        flex-direction: row;
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #f0145a;
+      }
+    }
+
+    .activeName {
+      background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  #BetweenMenu {
+    background-color: #ffffff4d;
+    min-width: 4px;
+    height: 100%;
+    position: relative;
+    @media (max-width: 960px) {
+      width: 100%;
+      min-height: 4px;
+      max-height: 4px;
+      margin-bottom: 60px;
+      margin-top: 60px;
+    }
+  }
+  #GeneralDescription {
+    max-width: 860px;
+
+    align-items: center;
+
+    margin-left: 60px;
+    display: flex;
+    @media (max-width: 960px) {
+      margin-left: 0;
+    }
+
+    .unactiveDescription {
+      display: none;
+    }
+    .activeDescription {
+      display: block;
+    }
+    .DescriptionName {
+      font-size: 30px;
+      line-height: 36.6px;
+      color: white;
+    }
+    .DescriptionOfMenu {
+      margin-top: 30px;
+      font-size: 19px;
+      line-height: 30px;
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+#serviceMenu {
+  margin-top: 60px;
+  max-height: 785px;
+  #ServicesName {
+    text-decoration: none;
+    max-width: 100px;
+    text-transform: uppercase;
+    color: #24a3ff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 17.1px;
+    &:hover {
+      color: #f0145a;
+      .ArrowServiceUnder {
+        stroke: #f0145a;
+      }
+    }
+    .ArrowService {
+      position: relative;
+      top: 1.5px;
+      right: 5px;
+      display: inline-block;
+    }
+  }
+  #Recomendation {
+    color: #f0145a;
+    margin-top: 10px;
+    font-size: 38px;
+    line-height: 46.35px;
+  }
+
+  #storeCards {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    .shopCard {
+      max-width: 493px;
+      max-height: 268px;
+      width: 100%;
+      .CardImage {
+        display: block;
+        max-width: 92px;
+        width: 100%;
+        max-height: 92px;
+        height: 100%;
+      }
+      .CardName {
+        margin-top: 30px;
+        font-size: 22px;
+        line-height: 27px;
+        color: #24a3ff;
+      }
+      #NextLineName {
+        max-width: 250px !important;
+      }
+      .CardDescription {
+        color: white;
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        max-height: 104px;
+      }
+    }
+  }
+}
+
+#BackgroundUnderHeader1 {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #cacadb;
+  width: calc(100% - 40px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+}
+#BackgroundUnderHeader2 {
+  position: relative;
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #e7e7f2;
+  width: calc(100% - 80px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+}
+#main {
+  margin-top: 60px;
+}
+#Slider {
+  max-height: 344px;
+  .ImageCard {
+    display: flex !important;
+    max-height: 298px;
+
+    .ImageOFcard {
+      border-radius: 12px 0 0 12px;
+      max-width: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .DescriptionImageCard {
+      border-radius: 0 12px 12px 0;
+      padding: 30px;
+      background-color: #f5f5fa;
+      .TeamLink {
+        max-width: 100px;
+        text-decoration: none;
+        color: #24a3ff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 17.1px;
+      }
+      .TheQuota {
+        max-width: calc(100% - 40px);
+        margin-top: 5px;
+        background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 38px;
+        max-height: 140px;
+        line-height: 46.35px;
+      }
+      .footName {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 19.5px;
+        color: #b3b3ba;
+      }
+      .footProffesion {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #b3b3ba;
+      }
+    }
+  }
+}
+.dotsinslider {
+  display: flex !important;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+
+  li {
+    width: 16px;
+    height: 16px;
+
+    button {
+      vertical-align: top;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 16px;
+      height: 16px;
+      font-size: 0;
+      background-color: #24a3ff !important;
+      opacity: 30%;
+      border-radius: 100%;
+    }
+  }
+  .slick-active button {
+    opacity: 100%;
+  }
+}

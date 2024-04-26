@@ -19,3 +19,27 @@ function validateForm() {
     }
   }
 }
+
+const AllNames = document.querySelectorAll(`.unactiveName`);
+const AllDesc = document.querySelectorAll(`.unactiveDescription`);
+
+for (let i = 0; AllNames.length > i; i++) {
+  AllNames[i].setAttribute(`data-id`, i);
+}
+
+$(`.unactiveName`).click(function (e) {
+  e.preventDefault();
+  $(AllNames).removeClass(`activeName`);
+  $(AllDesc).removeClass(`activeDescription`);
+
+  const That = this;
+  $(That).addClass(`activeName`);
+  const Target = Number($(That).data(`id`));
+  $(AllDesc[Target]).addClass(`activeDescription`);
+});
+
+$(`#Slider`).slick({
+  arrows: false,
+  dots: true,
+  dotsClass: `dotsinslider`,
+});

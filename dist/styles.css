@@ -72,24 +72,23 @@ header #LawCompany {
     font-size: 7px;
   }
 }
-
-.headerleftpart {
+header .headerleftpart {
   position: relative;
   grid-area: a;
 }
 @media (max-width: 685px) {
-  .headerleftpart {
+  header .headerleftpart {
     max-height: 57px;
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-.headerleftpart #hamburger {
+header .headerleftpart #hamburger {
   display: none;
 }
 @media (max-width: 685px) {
-  .headerleftpart #hamburger {
+  header .headerleftpart #hamburger {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -101,13 +100,13 @@ header #LawCompany {
     width: 32px;
     height: 32px;
   }
-  .headerleftpart #hamburger span {
+  header .headerleftpart #hamburger span {
     max-width: 18px;
     width: 100%;
     height: 2px;
     background-color: #323264;
   }
-  .headerleftpart #hamburger:hover {
+  header .headerleftpart #hamburger:hover {
     background-color: #e6e6f0;
     border-radius: 8px;
   }
@@ -913,6 +912,7 @@ main #imagesSection .card .aboutUser .proffesion {
   padding: 15px;
   font-size: 16px;
   width: 100%;
+  overflow: hidden;
   outline: none;
   border: white 1px solid;
   border-radius: 8px;
