@@ -43,3 +43,41 @@ $(`#Slider`).slick({
   dots: true,
   dotsClass: `dotsinslider`,
 });
+
+function scrollToElem(elem) {
+  event.preventDefault();
+  const target = document.querySelector(elem.hash);
+  window.scrollTo({
+    top: target.offsetTop,
+    behavior: "smooth",
+  });
+}
+
+//этот участок я взял что бы было как нужно так как знаний на это пока у меня нету точно
+
+let isDragging = false;
+let startPosition = 0;
+let startScrollLeft = 0;
+let startScrollTop = 0;
+
+document
+  .querySelector("#GeneralNames")
+  .addEventListener("mousedown", function (event) {
+    isDragging = true;
+    startPosition = event.clientX;
+    startScrollLeft = this.scrollLeft;
+    startScrollTop = this.scrollTop;
+  });
+
+document.addEventListener("mousemove", function (event) {
+  if (isDragging) {
+    let deltaX = event.clientX - startPosition;
+
+    document.querySelector("#GeneralNames").scrollLeft =
+      startScrollLeft - deltaX;
+  }
+});
+
+document.addEventListener("mouseup", function (event) {
+  isDragging = false;
+});

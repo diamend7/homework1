@@ -4,6 +4,31 @@
   padding-bottom: 60px;
   border-radius: 0px 0px 12px 12px;
 }
+@media (max-width: 685px) {
+  #backgroundheader header {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 685px) and (max-width: 685px) {
+  #backgroundheader header .parameters {
+    background-color: rgba(245, 245, 250, 0.2);
+  }
+  #backgroundheader header #hamburger:hover span {
+    background-color: #000000 !important;
+  }
+  #backgroundheader header #hamburger span {
+    background-color: white !important;
+  }
+}
+@media (max-width: 685px) {
+  #backgroundheader header #smallsizegridoptions.active .option {
+    color: #24a3ff !important;
+  }
+  #backgroundheader header #smallsizegridoptions.active .option:hover {
+    color: #f0145a !important;
+  }
+}
 
 #backgroundimage {
   background-image: url(../images/Symbol.png);
@@ -11,6 +36,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position: top;
+}
+@media (max-width: 685px) {
+  #backgroundimage {
+    background-size: 650px;
+  }
 }
 
 header {
@@ -24,10 +54,10 @@ header #wordTeam {
   display: none !important;
 }
 header #LawCompany {
-  color: white;
+  color: white !important;
 }
-header .headerleftpart h2 {
-  color: white;
+header .headerleftpart a {
+  color: white !important;
 }
 header .languagebutton {
   color: white !important;
@@ -59,17 +89,43 @@ header #facebookhover {
   min-height: 757px;
   min-height: 855px;
   justify-content: center;
+  position: relative;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 960px) {
+  .MiddleLetterandText {
+    min-height: 740px;
+  }
+}
+@media (max-width: 685px) {
+  .MiddleLetterandText {
+    max-width: 315px;
+    min-height: 640px;
+    text-align: center;
+  }
 }
 .MiddleLetterandText #textinImg {
   display: flex;
   position: relative;
   bottom: 45px;
   color: white !important;
-  z-index: 8;
+  z-index: 2;
   font-size: 38px;
+}
+@media (max-width: 960px) {
+  .MiddleLetterandText #textinImg {
+    bottom: 100px;
+  }
+}
+@media (max-width: 685px) {
+  .MiddleLetterandText #textinImg {
+    max-width: 315px;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+  }
 }
 .MiddleLetterandText #imgOfH {
   z-index: 2;
@@ -79,12 +135,34 @@ header #facebookhover {
   right: 25%;
   max-width: 1000px;
 }
+.MiddleLetterandText #ArrowEnter {
+  bottom: 25px;
+  left: calc(50% - 42px);
+  text-decoration: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.MiddleLetterandText #ArrowEnter:hover #CircleColor {
+  stroke: #f0145a;
+  opacity: 0.5;
+}
+.MiddleLetterandText #ArrowEnter:hover #ArrowEnterColor {
+  stroke: #f0145a;
+}
+.MiddleLetterandText #ArrowEnter .TwoAbsoluteSVG {
+  margin-left: -31px;
+  position: relative;
+  top: 2px;
+}
 
 #DesriptionMenu {
+  position: relative;
   margin-top: 60px;
   display: flex;
   height: 305px;
-  justify-content: center;
 }
 @media (max-width: 960px) {
   #DesriptionMenu {
@@ -92,7 +170,17 @@ header #facebookhover {
     height: 380px;
   }
 }
+@media (max-width: 685px) {
+  #DesriptionMenu {
+    height: 420px;
+    margin-top: 30px;
+  }
+}
 #DesriptionMenu #GeneralNames {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
   max-width: 375px;
   display: flex;
   flex-direction: column;
@@ -107,10 +195,32 @@ header #facebookhover {
     flex-direction: row;
     align-self: flex-start;
     margin-right: 0;
-    margin-left: 60px;
     overflow-x: scroll;
     overflow-y: hidden;
-    max-width: 650px;
+    max-width: 100%;
+  }
+  #DesriptionMenu #GeneralNames::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+  }
+  #DesriptionMenu #GeneralNames::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.3647058824);
+  }
+  #DesriptionMenu #GeneralNames::-webkit-scrollbar-thumb {
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    cursor: pointer;
+  }
+}
+@media (max-width: 685px) {
+  #DesriptionMenu #GeneralNames {
+    overflow-x: scroll;
+    max-height: 36.5px;
+    max-width: 315px;
+  }
+  #DesriptionMenu #GeneralNames::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+    position: absolute;
   }
 }
 #DesriptionMenu #GeneralNames .unactiveName {
@@ -122,6 +232,14 @@ header #facebookhover {
   #DesriptionMenu #GeneralNames .unactiveName {
     flex-direction: row;
     margin-right: 0;
+  }
+}
+@media (max-width: 685px) {
+  #DesriptionMenu #GeneralNames .unactiveName {
+    font-size: 30px;
+    line-height: 36.5px;
+    word-break: break-all;
+    flex-wrap: wrap;
   }
 }
 #DesriptionMenu #GeneralNames .unactiveName:hover {
@@ -145,7 +263,13 @@ header #facebookhover {
     min-height: 4px;
     max-height: 4px;
     margin-bottom: 60px;
-    margin-top: 60px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 685px) {
+  #DesriptionMenu #BetweenMenu {
+    margin-bottom: 30px;
+    margin-top: 15px;
   }
 }
 #DesriptionMenu #GeneralDescription {
@@ -170,6 +294,12 @@ header #facebookhover {
   line-height: 36.6px;
   color: white;
 }
+@media (max-width: 685px) {
+  #DesriptionMenu #GeneralDescription .DescriptionName {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+}
 #DesriptionMenu #GeneralDescription .DescriptionOfMenu {
   margin-top: 30px;
   font-size: 19px;
@@ -180,7 +310,6 @@ header #facebookhover {
 
 #serviceMenu {
   margin-top: 60px;
-  max-height: 785px;
 }
 #serviceMenu #ServicesName {
   text-decoration: none;
@@ -204,10 +333,19 @@ header #facebookhover {
   display: inline-block;
 }
 #serviceMenu #Recomendation {
-  color: #f0145a;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 10px;
   font-size: 38px;
   line-height: 46.35px;
+}
+@media (max-width: 685px) {
+  #serviceMenu #Recomendation {
+    font-size: 30px;
+    line-height: 36.57px;
+  }
 }
 #serviceMenu #storeCards {
   margin-top: 60px;
@@ -216,10 +354,39 @@ header #facebookhover {
   flex-wrap: wrap;
   gap: 60px;
 }
+@media (max-width: 685px) {
+  #serviceMenu #storeCards {
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
 #serviceMenu #storeCards .shopCard {
   max-width: 493px;
   max-height: 268px;
   width: 100%;
+}
+@media (max-width: 1650px) and (min-width: 1380px) {
+  #serviceMenu #storeCards .shopCard {
+    max-width: 400px;
+    max-height: 321px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #serviceMenu #storeCards .shopCard {
+    max-width: 260px;
+    max-height: 400px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #serviceMenu #storeCards .shopCard {
+    max-width: 294px;
+    max-height: 375px;
+  }
+}
+@media (max-width: 685px) {
+  #serviceMenu #storeCards .shopCard {
+    max-height: 100%;
+  }
 }
 #serviceMenu #storeCards .shopCard .CardImage {
   display: block;
@@ -229,10 +396,15 @@ header #facebookhover {
   height: 100%;
 }
 #serviceMenu #storeCards .shopCard .CardName {
+  display: block;
+  text-decoration: none;
   margin-top: 30px;
   font-size: 22px;
   line-height: 27px;
   color: #24a3ff;
+}
+#serviceMenu #storeCards .shopCard .CardName:hover {
+  color: #f0145a;
 }
 #serviceMenu #storeCards .shopCard #NextLineName {
   max-width: 250px !important;
@@ -243,7 +415,6 @@ header #facebookhover {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  max-height: 104px;
 }
 
 #BackgroundUnderHeader1 {
@@ -268,26 +439,106 @@ header #facebookhover {
   border-radius: 0px 0px 12px 12px;
 }
 
+.container {
+  max-width: 1620px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  .container {
+    max-width: 924px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  .container {
+    max-width: 668px;
+  }
+}
+@media (max-width: 685px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
 #main {
   margin-top: 60px;
+}
+@media (max-width: 685px) {
+  #main {
+    margin-top: 30px;
+  }
 }
 
 #Slider {
   max-height: 344px;
 }
+@media (max-width: 1380px) and (min-width: 960px) {
+  #Slider {
+    max-height: 574px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #Slider {
+    max-height: 982px;
+  }
+}
+@media (max-width: 685px) {
+  #Slider {
+    max-height: 1133px;
+  }
+}
 #Slider .ImageCard {
+  border-radius: 12px;
+  overflow: hidden;
   display: flex !important;
   max-height: 298px;
 }
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #Slider .ImageCard {
+    max-height: 344px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #Slider .ImageCard {
+    max-height: 528px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #Slider .ImageCard {
+    flex-direction: column;
+    max-height: 936px;
+  }
+}
+@media (max-width: 685px) {
+  #Slider .ImageCard {
+    max-height: 1087px;
+    flex-direction: column;
+  }
+}
 #Slider .ImageCard .ImageOFcard {
-  border-radius: 12px 0 0 12px;
   max-width: 400px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 960px) and (min-width: 685px) {
+  #Slider .ImageCard .ImageOFcard {
+    max-width: 668px;
+  }
+}
+@media (max-width: 960px) {
+  #Slider .ImageCard .ImageOFcard {
+    height: 100%;
+    aspect-ratio: 8/13;
+    max-height: 500px;
+  }
+}
 #Slider .ImageCard .DescriptionImageCard {
-  border-radius: 0 12px 12px 0;
   padding: 30px;
   background-color: #f5f5fa;
 }
@@ -300,6 +551,12 @@ header #facebookhover {
   font-size: 14px;
   line-height: 17.1px;
 }
+#Slider .ImageCard .DescriptionImageCard .TeamLink:hover {
+  color: #f0145a;
+}
+#Slider .ImageCard .DescriptionImageCard .TeamLink:hover .ArrowServiceUnder {
+  stroke: #f0145a;
+}
 #Slider .ImageCard .DescriptionImageCard .TheQuota {
   max-width: calc(100% - 40px);
   margin-top: 5px;
@@ -308,8 +565,20 @@ header #facebookhover {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 38px;
-  max-height: 140px;
   line-height: 46.35px;
+}
+@media (max-width: 1640px) and (min-width: 685px) {
+  #Slider .ImageCard .DescriptionImageCard .TheQuota {
+    max-width: 100%;
+  }
+}
+@media (max-width: 685px) {
+  #Slider .ImageCard .DescriptionImageCard .TheQuota {
+    font-size: 30px;
+    line-height: 36.57px;
+    max-width: 100%;
+    word-break: break-word;
+  }
 }
 #Slider .ImageCard .DescriptionImageCard .footName {
   margin-top: 30px;
@@ -350,4 +619,316 @@ header #facebookhover {
 }
 .dotsinslider .slick-active button {
   opacity: 100%;
+}
+
+#BannerMenu {
+  max-width: 1720px !important;
+  padding: 0 !important;
+  margin-top: 60px;
+}
+#BannerMenu #TextBunner {
+  text-align: center;
+  color: #323264;
+  font-size: 14px;
+  line-height: 17.1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#BannerMenu #Banners {
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 360px;
+  height: 100%;
+  display: flex;
+  -moz-columns: 4;
+       columns: 4;
+  flex-wrap: wrap;
+}
+@media (max-width: 1750px) {
+  #BannerMenu #Banners {
+    border-radius: 0;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #BannerMenu #Banners {
+    max-height: 480px;
+  }
+}
+@media (max-width: 685px) {
+  #BannerMenu #Banners {
+    max-height: 720px;
+    overflow-y: scroll;
+  }
+}
+#BannerMenu #Banners .OneBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  min-height: 120px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #BannerMenu #Banners .OneBanner {
+    max-width: 33.33%;
+  }
+}
+@media (max-width: 685px) {
+  #BannerMenu #Banners .OneBanner {
+    max-width: 100%;
+  }
+}
+#BannerMenu #Banners .OneBanner .BannerImg {
+  display: flex;
+}
+#BannerMenu #Banners #Banner1 {
+  background-color: #1c4280;
+}
+#BannerMenu #Banners #Banner2 {
+  background-color: #143646;
+}
+#BannerMenu #Banners #Banner3 {
+  background-color: #f48b30;
+}
+#BannerMenu #Banners #Banner4 {
+  background-color: #9e4dc3;
+}
+#BannerMenu #Banners #Banner5 {
+  background-color: #fd9339;
+}
+#BannerMenu #Banners #Banner6 {
+  background-color: #e2e2e4;
+}
+#BannerMenu #Banners #Banner7 {
+  background-color: #c71c36;
+}
+#BannerMenu #Banners #Banner8 {
+  background-color: #dcf3f9;
+}
+#BannerMenu #Banners #Banner9 {
+  background-color: #eaeaea;
+}
+#BannerMenu #Banners #Banner10 {
+  background-color: #282240;
+}
+#BannerMenu #Banners #Banner11 {
+  background-color: #1d4568;
+}
+#BannerMenu #Banners #Banner12 {
+  background-color: #000000;
+}
+
+#newsSection #NewsHeader #PublicationLink {
+  letter-spacing: 1px;
+  color: #24a3ff;
+  text-transform: uppercase;
+  line-height: 17.1px;
+}
+#newsSection #NewsHeader #PublicationLink .ArrowService {
+  position: relative;
+  top: 0;
+  right: 2px;
+  display: inline-block;
+}
+#newsSection #NewsHeader #PublicationLink:hover {
+  color: #f0145a;
+}
+#newsSection #NewsHeader #PublicationLink:hover .ArrowServiceUnder {
+  stroke: #f0145a;
+}
+#newsSection #NewsHeader #NewsText {
+  font-size: 38px;
+  margin-top: 10px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 685px) {
+  #newsSection #NewsHeader #NewsText {
+    font-size: 30px;
+  }
+}
+#newsSection #NewsCards {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  max-height: 430px;
+  height: 100%;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #newsSection #NewsCards {
+    max-height: 450px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #newsSection #NewsCards {
+    max-height: 556px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #newsSection #NewsCards {
+    flex-wrap: wrap;
+    max-height: 932px;
+  }
+}
+@media (max-width: 685px) {
+  #newsSection #NewsCards {
+    max-height: 1460px;
+    flex-wrap: wrap;
+  }
+}
+#newsSection #NewsCards .NewsCard {
+  background-color: white;
+  max-width: 513.33px;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #newsSection #NewsCards .NewsCard {
+    max-width: 420px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #newsSection #NewsCards .NewsCard {
+    max-width: calc(50% - 15px);
+    max-height: 514px;
+  }
+}
+@media (max-width: 685px) {
+  #newsSection #NewsCards .NewsCard {
+    max-width: 100%;
+    max-height: 432px;
+  }
+}
+#newsSection #NewsCards .NewsCard .NewsCardImg {
+  max-height: 200px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#newsSection #NewsCards .NewsCard .NewsText {
+  padding: 30px;
+}
+#newsSection #NewsCards .NewsCard .NewsText .NewsName {
+  color: #24a3ff;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-decoration: none;
+  font-size: 16px;
+}
+#newsSection #NewsCards .NewsCard .NewsText .NewsName:hover {
+  color: #f0145a;
+}
+#newsSection #NewsCards .NewsCard .NewsText .NewsDate {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #b3b3ba;
+}
+#newsSection #NewsCards .NewsCard .NewsText .NewsLine {
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: #e6e6f0;
+}
+#newsSection #NewsCards .NewsCard .NewsText .NewsParagraph {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #newsSection #NewsCards .NewsCard:last-child {
+    max-width: 100%;
+    max-height: 388px;
+  }
+  #newsSection #NewsCards .NewsCard:last-child .NewsCardImg {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+#FooterLine {
+  display: block;
+  position: relative;
+  background-color: #e6e6f0;
+  height: 2px;
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #FooterLine {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #FooterLine {
+    max-width: 904px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #FooterLine {
+    max-width: 648px;
+  }
+}
+@media (max-width: 685px) {
+  #FooterLine {
+    max-width: 315px;
+  }
+}
+
+@media (max-width: 1640px) {
+  #footer {
+    margin-top: 0;
+  }
+}
+#footer .rights {
+  top: 0;
+  right: 10px;
+  position: absolute;
+}
+@media (max-width: 960px) {
+  #footer .rights {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+@media (max-width: 685px) {
+  #footer .rights {
+    text-align: center;
+  }
+}
+@media (max-width: 685px) {
+  #footer .rights {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+#footer .rights #company {
+  color: #b3b3ba;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 400;
+}
+#footer #allinfooter {
+  position: relative;
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #footer #allinfooter {
+    max-width: 668px;
+  }
 }/*# sourceMappingURL=homepagestyle.css.map */
