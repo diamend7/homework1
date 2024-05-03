@@ -1,8 +1,8 @@
-main {
+.main {
   margin-top: 60px;
 }
 @media (max-width: 685px) {
-  main {
+  .main {
     margin-top: 30px;
   }
 }
