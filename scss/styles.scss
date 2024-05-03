@@ -99,7 +99,8 @@ header {
         span {
           max-width: 18px;
           width: 100%;
-          height: 2px;
+          min-height: 2px;
+          max-height: 2px;
           background-color: #323264;
         }
         &:hover {
@@ -229,7 +230,8 @@ header {
       }
     }
     .activeoption {
-      border-bottom: none;
+      border-bottom: none !important;
+      color: #f0145a !important;
       padding: 8.5px 0;
     }
   }
@@ -322,8 +324,8 @@ header {
     }
   }
   .activeoption {
-    color: #f0145a;
-    border-bottom: 2px #f0145a solid;
+    color: #f0145a !important;
+    border-bottom: 2px #f0145a solid !important;
     line-height: 30px;
     margin-left: 15px;
     text-decoration: none;
@@ -383,7 +385,7 @@ header {
 }
 .headercontain {
   @media (max-width: 685px) {
-    max-width: 100%;
+    max-width: 100% !important;
     padding-left: 0;
     padding-right: 0;
   }

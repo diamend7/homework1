@@ -21,13 +21,16 @@
     background-color: white !important;
   }
 }
-@media (max-width: 685px) {
-  #backgroundheader header #smallsizegridoptions.active .option {
-    color: #24a3ff !important;
-  }
-  #backgroundheader header #smallsizegridoptions.active .option:hover {
-    color: #f0145a !important;
-  }
+#backgroundheader #smallsizegridoptions.active .option {
+  color: #24a3ff !important;
+}
+#backgroundheader #smallsizegridoptions.active .option:hover {
+  color: #f0145a !important;
+}
+#backgroundheader #smallsizegridoptions.active .activeoption {
+  border-bottom: none !important;
+  color: #f0145a !important;
+  padding: 8.5px 0;
 }
 
 #backgroundimage {
@@ -52,6 +55,7 @@ header #symbolh1 {
 }
 header #wordTeam {
   display: none !important;
+  color: white !important;
 }
 header #LawCompany {
   color: white !important;
@@ -894,41 +898,187 @@ header #facebookhover {
     margin-top: 0;
   }
 }
-#footer .rights {
-  top: 0;
-  right: 10px;
-  position: absolute;
+
+.displaynone {
+  display: none;
 }
-@media (max-width: 960px) {
-  #footer .rights {
-    margin-top: 0;
-    position: absolute;
-    top: 0;
-    right: 10px;
-  }
+
+#OneServiceMenu {
+  margin-top: 60px;
+  text-align: center;
+}
+#OneServiceMenu .ServiceCard .ServiceName {
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 @media (max-width: 685px) {
-  #footer .rights {
-    text-align: center;
+  #OneServiceMenu .ServiceCard .ServiceName {
+    font-size: 30px;
   }
 }
-@media (max-width: 685px) {
-  #footer .rights {
-    position: relative;
-    margin-top: 30px;
-  }
-}
-#footer .rights #company {
-  color: #b3b3ba;
-  font-size: 16px;
-  line-height: 19.5px;
+#OneServiceMenu .ServiceCard .ServiceDescription {
+  color: white;
   font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6;
 }
-#footer #allinfooter {
+#OneServiceMenu .ServiceCard .ServiceDescription:last-child {
+  margin-top: 30px;
+}
+#OneServiceMenu .ServiceButton {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+#OneServiceMenu .ServiceButton .ConsultationButton {
+  cursor: pointer;
+  font-family: Monsteratt;
+  outline: none;
+  border: none;
+  display: block;
+  color: white;
+  padding: 18px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #24a3ff;
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5019607843);
+  border-radius: 12px;
+}
+#OneServiceMenu .rightsection {
   position: relative;
+  text-align: start;
+}
+@media (max-width: 1360px) {
+  #OneServiceMenu .rightsection {
+    max-width: 420px;
+    max-height: 640px;
+  }
+  #OneServiceMenu .rightsection #h2Form {
+    max-width: 275px;
+  }
+}
+#OneServiceMenu #ClickConsultationMenu.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  max-height: 100%;
+  inset: 0;
+  background-color: rgba(50, 50, 100, 0.7);
+  z-index: 4;
+}
+#OneServiceMenu #ClickConsultationMenu.active #Cancel {
+  display: block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 30px;
+  top: 30px;
+  width: 32px;
+  height: 32px;
+}
+#OneServiceMenu #ClickConsultationMenu.active #Cancel:hover {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 8px;
+}
+#OneServiceMenu #ClickConsultationMenu.active #Cancel span {
+  max-width: 22px;
+  width: 100%;
+  height: 2px;
+  background-color: #ec6f5d;
+}
+#OneServiceMenu #ClickConsultationMenu.active #Cancel span:first-child {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 2px;
+}
+#OneServiceMenu #ClickConsultationMenu.active #Cancel span:last-child {
+  transform: rotate(45deg);
+}
+#OneServiceMenu #ServiceLine {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  height: 4px;
+  max-width: 1580px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #OneServiceMenu #ServiceLine {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #OneServiceMenu #ServiceLine {
+    max-width: 904px;
+  }
 }
 @media (max-width: 960px) and (min-width: 685px) {
-  #footer #allinfooter {
-    max-width: 668px;
+  #OneServiceMenu #ServiceLine {
+    max-width: 648px;
   }
+}
+@media (max-width: 685px) {
+  #OneServiceMenu #ServiceLine {
+    max-width: 315px;
+  }
+}
+#OneServiceMenu .AdviseForService {
+  padding: 0;
+  margin-bottom: -15px;
+  text-align: start;
+}
+#OneServiceMenu .AdviseForService .TextAdvise {
+  color: white;
+  font-size: 22px;
+}
+#OneServiceMenu .AdviseForService .AllAdvises {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+@media (max-width: 685px) {
+  #OneServiceMenu .AdviseForService .AllAdvises {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+#OneServiceMenu .AdviseForService .AllAdvises li {
+  max-width: 636px;
+  margin-bottom: 15px;
+  color: #f0145a;
+}
+@media (max-width: 1640px) and (min-width: 1380px) {
+  #OneServiceMenu .AdviseForService .AllAdvises li {
+    max-width: 490px;
+  }
+}
+@media (max-width: 1380px) and (min-width: 960px) {
+  #OneServiceMenu .AdviseForService .AllAdvises li {
+    max-width: 402px;
+  }
+}
+@media (max-width: 960px) and (min-width: 685px) {
+  #OneServiceMenu .AdviseForService .AllAdvises li {
+    max-width: 280px;
+  }
+}
+#OneServiceMenu .AdviseForService .AllAdvises .Advise {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }/*# sourceMappingURL=homepagestyle.css.map */

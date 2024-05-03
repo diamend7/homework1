@@ -44,6 +44,25 @@ $(`#Slider`).slick({
   dotsClass: `dotsinslider`,
 });
 
+$(`#CompanySlider`).slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows: false,
+  dots: true,
+  dotsClass: `dotsinslider`,
+  responsive: [
+    {
+      breakpoint: 685,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
+});
+
 function scrollToElem(elem) {
   event.preventDefault();
   const target = document.querySelector(elem.hash);
@@ -51,6 +70,14 @@ function scrollToElem(elem) {
     top: target.offsetTop,
     behavior: "smooth",
   });
+}
+function ServiceButtonClick() {
+  event.preventDefault;
+  $(`#ClickConsultationMenu`).addClass(`active`);
+}
+function Cancel() {
+  event.preventDefault;
+  $(`#ClickConsultationMenu`).removeClass(`active`);
 }
 
 //этот участок я взял что бы было как нужно так как знаний на это пока у меня нету точно

@@ -1,0 +1,314 @@
+main {
+  margin-top: 60px;
+  @media (max-width: 685px) {
+    margin-top: 30px;
+  }
+}
+.container {
+  max-width: 1620px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  @media (max-width: 1640px) and (min-width: 1380px) {
+    max-width: 1340px;
+  }
+  @media (max-width: 1380px) and (min-width: 960px) {
+    max-width: 924px;
+  }
+  @media (max-width: 960px) and (min-width: 685px) {
+    max-width: 668px;
+  }
+  @media (max-width: 685px) {
+    max-width: 335px;
+  }
+}
+.MainFlexContainer {
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  @media (max-width: 1380px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+  .HeaderText {
+    max-width: 942px;
+    @media (max-width: 1640px) and (min-width: 1360px) {
+      max-width: 662px;
+    }
+    @media (max-width: 1380px) and (min-width: 960px) {
+      max-width: 486px;
+    }
+    #TextName {
+      margin-bottom: 28px;
+      font-size: 38px;
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media (max-width: 685px) {
+        font-size: 30px;
+      }
+    }
+    .HeaderText_ParagraphUp {
+      font-size: 19px;
+      font-weight: 400;
+      color: black;
+      line-height: 30px;
+    }
+    .HeaderText_ParagraphUp:last-child {
+      margin-top: 15px;
+    }
+  }
+  #HeaderRightData {
+    margin-left: 30px;
+    padding-left: 30px;
+    max-width: 388px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-left: solid 4px #e6e6f0;
+
+    @media (max-width: 960px) {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+
+    .OneAchivement {
+      .ColorfulAchivment {
+        .AchivImg {
+          vertical-align: sub;
+        }
+        .AchivementNumber {
+          background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 36px;
+          line-height: 44px;
+        }
+      }
+      .AchivementText {
+        color: #323264;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+#TeamImageSection {
+  margin-top: 60px;
+  max-width: 100%;
+  @media (max-width: 685px) {
+    margin-top: 30px;
+  }
+
+  #TeamImage_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #TeamImage {
+      object-fit: cover;
+      max-height: 585px;
+      min-width: 100%;
+    }
+    #TeamWordImage {
+      max-width: 478px;
+      position: absolute;
+      font-size: 96px;
+      letter-spacing: 63px;
+      color: white;
+      text-transform: uppercase;
+
+      opacity: 80%;
+      @media (max-width: 1380px) and (min-width: 960px) {
+        font-size: 86px;
+        max-width: 448px;
+      }
+      @media (max-width: 960px) and (min-width: 685px) {
+        font-size: 46px;
+        max-width: 328px;
+      }
+      @media (max-width: 685px) {
+        font-size: 36px;
+        letter-spacing: 13px;
+      }
+    }
+  }
+}
+#RightFooterMain {
+  margin-left: 60px;
+  max-width: 362px;
+  @media (max-width: 960px) {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  #RightFooterMain_h2 {
+    font-size: 38px;
+    line-height: 46.4px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (max-width: 685px) {
+      font-size: 30px;
+    }
+  }
+}
+
+#Advisement {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #323264;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+#CompanySlider {
+  @media (max-width: 685px) {
+    .dotsinslider {
+      li:nth-child(7) {
+        display: none !important;
+      }
+      li:nth-child(8) {
+        display: none !important;
+      }
+      li:nth-child(9) {
+        display: none !important;
+      }
+      li:nth-child(10) {
+        display: none !important;
+      }
+      li:nth-child(11) {
+        display: none !important;
+      }
+      li:nth-child(12) {
+        display: none !important;
+      }
+    }
+  }
+  // я незнаю як зробити адаптив в js
+  .slick-slide {
+    img {
+      display: inline-block;
+    }
+  }
+  .OneCompany {
+    margin-left: 15px;
+
+    display: block !important;
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+    max-width: 370px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-height: 110px;
+    height: max-content;
+    width: 100%;
+
+    @media (max-width: 1640px) and (min-width: 1380px) {
+      max-width: 300px;
+    }
+    @media (max-width: 1380px) and (min-width: 960px) {
+      max-width: 196px;
+    }
+    @media (max-width: 960px) and (min-width: 685px) {
+      max-width: 132px;
+      max-height: 90px;
+      height: max-content;
+    }
+    @media (max-width: 685px) {
+      max-width: 255px;
+      max-height: 90px;
+      margin-left: 30px;
+    }
+
+    img {
+      @media (max-width: 960px) {
+        max-width: 132px;
+
+        max-height: 40px;
+      }
+    }
+  }
+  // .noAmount {
+  //   @media (max-width: 685px) {
+  //     display: none !important;
+  //   }
+  // }
+}
+
+//details
+.HeaderText_ParagraphUp:nth-child(2) {
+  margin-top: 15px;
+}
+.dotsinslider {
+  display: flex !important;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+
+  li {
+    width: 16px;
+    height: 16px;
+
+    button {
+      vertical-align: top;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 16px;
+      height: 16px;
+      font-size: 0;
+      background-color: #24a3ff !important;
+      opacity: 30%;
+      border-radius: 100%;
+    }
+  }
+  .slick-active button {
+    opacity: 100%;
+  }
+}
+#FooterLine {
+  display: block;
+  position: relative;
+  background-color: #e6e6f0;
+  height: 2px;
+  max-width: 1600px;
+
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  @media (max-width: 1640px) and (min-width: 1380px) {
+    max-width: 1320px;
+  }
+  @media (max-width: 1380px) and (min-width: 960px) {
+    max-width: 904px;
+  }
+  @media (max-width: 960px) and (min-width: 685px) {
+    max-width: 648px;
+  }
+  @media (max-width: 685px) {
+    max-width: 315px;
+  }
+}
+// @media (max-width: 1640px) and (min-width: 1360px) {
+//   max-width: 1340px;
+// }
+// @media (max-width: 1360px) and (min-width: 960px) {
+//   max-width: 924px;
+// }
+// @media (max-width: 960px) and (min-width: 685px) {
+//   max-width: 668px;
+// }
+// @media (max-width: 685px) {
+//   max-width: 335px;
+// }
